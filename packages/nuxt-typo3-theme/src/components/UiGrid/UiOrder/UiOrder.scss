@@ -1,0 +1,17 @@
+
+@mixin make-grid-columns-order($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $breakpoints) {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+
+      .order#{$infix}-first { order: -1; }
+
+      .order#{$infix}-last { order: $columns + 1; }
+
+      @for $i from 0 through $columns {
+        .order#{$infix}-#{$i} { order: $i; }
+      }
+    }
+  }
+}

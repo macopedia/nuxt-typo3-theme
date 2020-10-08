@@ -1,0 +1,9 @@
+
+/// @example scss - Basic Usage of text mixin()
+///  .class {
+///    @include text(2xl);
+///  }
+@mixin text($variant: 'base') {
+  font-size: var(--font-size-#{$variant});
+  line-height: var(--line-height-#{$variant});
+}

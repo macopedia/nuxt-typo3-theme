@@ -1,0 +1,215 @@
+@use "sass:map";
+// Reset
+// ==========
+@import 'sanitize.css/sanitize';
+@import './shared';
+@import './utils';
+// more should be done by sanitize.css
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-bg-body);
+}
+
+// Setup CSS variables to redefine them later
+:root {
+  --font-family-primary: #{$font-family-primary};
+  --font-size-2xs: #{$font-size-2xs};
+  --font-size-xs: #{$font-size-xs};
+  --font-size-sm: #{$font-size-sm};
+  --font-size-md: #{$font-size-md};
+  --font-size-lg: #{$font-size-lg};
+  --font-size-xl: #{$font-size-xl};
+  --font-size-2xl: #{$font-size-2xl};
+  --font-size-3xl: #{$font-size-3xl};
+  --font-size-4xl: #{$font-size-4xl};
+  --font-size-5xl: #{$font-size-5xl};
+  --font-size-base: #{$font-size-base};
+  --line-height-2xs: #{$line-height-2xs};
+  --line-height-xs: #{$line-height-xs};
+  --line-height-sm: #{$line-height-sm};
+  --line-height-md: #{$line-height-md};
+  --line-height-lg: #{$line-height-lg};
+  --line-height-xl: #{$line-height-xl};
+  --line-height-2xl: #{$line-height-2xl};
+  --line-height-3xl: #{$line-height-3xl};
+  --line-height-4xl: #{$line-height-4xl};
+  --line-height-5xl: #{$line-height-5xl};
+  --line-height-base: #{$line-height-base};
+  --font-size-h1: #{$font-size-h1};
+  --font-size-h2: #{$font-size-h2};
+  --font-size-h3: #{$font-size-h3};
+  --font-size-h4: #{$font-size-h4};
+  --font-size-h5: #{$font-size-h5};
+  --font-weight-light: #{$font-weight-light};
+  --font-weight-regular: #{$font-weight-regular};
+  --font-weight-medium: #{$font-weight-medium};
+  --font-weight-bold: #{$font-weight-bold};
+  --color-black: #{$palette-black};
+  --color-white: #{$palette-white};
+  --color-primary: #{$color-primary};
+  --color-text-primary: #{$color-text-primary};
+  --color-bg-primary: #{$color-bg-primary};
+  --color-bg-secondary: #{$color-bg-secondary};
+  --color-primary-inverted: #{$color-primary-inverted};
+  --color-text-primary-inverted: #{$color-text-primary-inverted};
+  --color-bg-primary-inverted: #{$color-bg-primary-inverted};
+  --color-link-normal: #{$color-link-normal};
+  --color-bg-body: #{$color-bg-body};
+  --space-base: #{$space-base};
+  --space-2xs: #{$space-2xs};
+  --space-xs: #{$space-xs};
+  --space-sm: #{$space-sm};
+  --space-md: #{$space-md};
+  --space-lg: #{$space-lg};
+  --space-xl: #{$space-xl};
+  --space-base: #{$space-base};
+  --space-2xs: #{$space-2xs};
+  --space-xs: #{$space-xs};
+  --space-sm: #{$space-sm};
+  --space-md: #{$space-md};
+  --space-lg: #{$space-lg};
+  --space-xl: #{$space-xl};
+  --space-1: #{$space-1};
+  --space-2: #{$space-2};
+  --space-3: #{$space-3};
+  --space-4: #{$space-4};
+  --space-5: #{$space-5};
+  --space-6: #{$space-6};
+  --space-8: #{$space-8};
+  --space-10: #{$space-10};
+  --space-12: #{$space-12};
+  --space-16: #{$space-16};
+  --space-24: #{$space-24};
+  --space-32: #{$space-32};
+  --space-48: #{$space-48};
+  --space-64: #{$space-64};
+  --container-default: #{$container-default-width};
+  --container-sm: #{map.get($container-max-widths, sm)};
+  --container-md: #{map.get($container-max-widths, md)};
+  --container-lg: #{map.get($container-max-widths, lg)};
+  --container-xl: #{map.get($container-max-widths, xl)};
+  --container-xxl: #{map.get($container-max-widths, xxl)};
+  --box-shadow-base: #{$box-shadow-base};
+  --box-shadow-sm: #{$box-shadow-sm};
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @include text;
+
+  color: var(--color-text-primary, $color-text-primary);
+  font-weight: var(--font-weight-regular, $font-weight-regular);
+  font-family: var(--font-family-primary, $font-family-primary);
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 0;
+  font-weight: var(--font-weight-regular, $font-weight-bold);
+}
+
+h1,
+.h1 {
+  @include text(5xl);
+
+  margin-bottom: var(--space-lg, $space-lg);
+}
+
+h2,
+.h2 {
+  @include text(4xl);
+
+  margin-bottom: var(--space-sm, $space-sm);
+}
+
+h3,
+.h3 {
+  @include text(3xl);
+
+  margin-bottom: var(--space-sm, $space-sm);
+}
+
+h4,
+.h4 {
+  @include text(2xl);
+
+  margin-bottom: var(--space-sm, $space-sm);
+}
+
+h5,
+.h5 {
+  @include text(xl);
+
+  margin-bottom: var(--space-sm, $space-xs);
+}
+
+p {
+  @include text(base);
+
+  margin: var(--space-4) 0;
+}
+
+// Links
+// ==========
+a {
+  color: var(--color-link-normal);
+
+  &,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+ul {
+  li::before {
+    position: absolute;
+  }
+}
+
+// Media
+// ==========
+img,
+iframe {
+  max-width: 100%;
+}
+
+// Tables
+// ==========
+table {
+  border-collapse: collapse;
+}
+
+table,
+tr,
+td,
+th {
+  border: 1px solid var(--color-primary);
+  padding: var(--space-2) var(--space-4);
+}
+
+th {
+  font-weight: var(--font-weight-bold);
+  text-align: left;
+}

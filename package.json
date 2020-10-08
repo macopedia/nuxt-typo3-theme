@@ -1,0 +1,33 @@
+{
+  "name": "nuxt-typo3-theme",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "description": "nuxt-typo3 theme",
+  "main": "index.js",
+  "author": "Adam Marcinkowski <a.marcinkowski@macopedia.pl>",
+  "license": "MIT",
+  "scripts": {
+    "nuxt-typo3-ce": "yarn workspace nuxt-typo3-ce",
+    "nuxt-typo3-theme": "yarn workspace nuxt-typo3-theme",
+    "storybook": "yarn nuxt-typo3-theme storybook",
+    "lint": "yarn nuxt-typo3-ce lint && yarn nuxt-typo3-theme lint",
+    "test": "yarn nuxt-typo3-ce test:unit&& yarn nuxt-typo3-theme test:unit"
+  },
+  "engines": {
+    "node": ">=12.20.x",
+    "yarn": ">=1.22.0"
+  },
+  "volta": {
+    "node": "12.22.1",
+    "yarn": "1.22.10"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
+    "husky": "^7.0.2",
+    "lerna": "^4.0.0"
+  }
+}
