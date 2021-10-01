@@ -12,7 +12,7 @@
     "allowJs": true,
     "sourceMap": true,
     "baseUrl": ".",
-    "types": ["@types/node", "webpack-env", "jest", "node", "vue", "vuex"],
+    "types": ["@types/node", "webpack-env", "jest", "node", "vue", "vuex", "nuxt-typo3"],
     "paths": {
       "@/*": ["src/*"]
     },
