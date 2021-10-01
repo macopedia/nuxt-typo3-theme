@@ -7,7 +7,6 @@ declare module '*.vue' {
       $style: Record<string, string>
       $mq: 'sm' | 'md' | 'lg'
       props: typeof this.$props
-      $typo3: Record<string, unknown>
     }
     interface VueConstructor {
       $style: Record<string, string>

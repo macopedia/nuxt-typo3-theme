@@ -1,5 +1,5 @@
 import Vue, { VueConstructor } from 'vue'
-import { PluginObject, PluginFunction } from 'vue/types'
+import { PluginObject } from 'vue/types'
 import UiPlugin from '../index'
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type TYPO3CeInstance<T> = T extends new (...args: any[]) => infer R
@@ -32,7 +32,6 @@ export {
   CeAppearanceInterface,
   CeAppearanceProps
 } from '../src/composables/useAppearanceProps/appearanceProps.types'
-
 
 export { File, FileList } from '../src/components/CeUploads/CeUploads.types'
 
@@ -67,7 +66,5 @@ export {
   CeGalleryProp
 } from '../src/components/CeGallery/CeGallery.types'
 
-
-export type UiPlugin = PluginObject<UiPlugin>;
+export type UiPlugin = PluginObject<UiPlugin>
 export default UiPlugin
-

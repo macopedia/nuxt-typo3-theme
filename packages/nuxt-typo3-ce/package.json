@@ -37,6 +37,7 @@
     "eslint-config-macopedia": "^0.1.0",
     "flush-promises": "^1.0.2",
     "fork-ts-checker-webpack-plugin": "^5.2.0",
+    "nuxt-typo3": "^0.9.3",
     "prettier-standard": "^16.4.1",
     "react-is": "^16.13.1",
     "sass": "^1.26.5",
