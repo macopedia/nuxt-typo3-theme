@@ -53,8 +53,18 @@ const NuxtTypo3Theme: Module = async function (options: TYPO3ThemeOptions) {
   }
 
   if (options.layouts) {
-    this.addLayout(resolve(__dirname, '../layouts/default.vue'), 'default')
-    this.addLayout(resolve(__dirname, '../layouts/error.vue'), 'error')
+    if (
+      typeof options.layouts === 'boolean' ||
+      (Array.isArray(options.layouts) && options.layouts.includes('default'))
+    ) {
+      this.addLayout(resolve(__dirname, '../layouts/default.vue'), 'default')
+    }
+    if (
+      typeof options.layouts === 'boolean' ||
+      (Array.isArray(options.layouts) && options.layouts.includes('error'))
+    ) {
+      this.addLayout(resolve(__dirname, '../layouts/error.vue'), 'error')
+    }
   }
 
   this.nuxt.hook('build:before', async () => {
