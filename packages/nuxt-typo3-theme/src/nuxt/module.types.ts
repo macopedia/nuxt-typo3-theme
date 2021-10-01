@@ -6,7 +6,7 @@ interface TYPO3ThemeOptions {
   /** use google fonts module */
   googleFonts?: boolean
   /** use theme layouts eg. default.vue */
-  layouts?: boolean
+  layouts?: boolean | string[]
   /** use global components to override locals in specific scope */
   overrideLocalComponents?: boolean | string[]
 }
