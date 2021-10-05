@@ -48,11 +48,6 @@ export default Vue.extend({
 
       return { ...errorPageTranslations, ...this.i18n }
     }
-  },
-  created () {
-    if (this.$nuxt.isOffline) {
-      this.$router.push('/offline')
-    }
   }
 })
 </script>
