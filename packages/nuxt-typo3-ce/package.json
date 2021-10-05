@@ -1,6 +1,6 @@
 {
   "name": "nuxt-typo3-ce",
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.1",
   "main": "./index.ts",
   "types": "./types",
   "license": "MIT",
