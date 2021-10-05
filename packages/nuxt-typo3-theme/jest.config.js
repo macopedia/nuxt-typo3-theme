@@ -18,7 +18,7 @@ module.exports = {
     },
     'ts-jest': {
       babelConfig: true,
-      tsconfig: '<rootDir>/tsconfig.test.json',
+      tsconfig: '<rootDir>/tsconfig.json',
     }
   },
   setupFilesAfterEnv: ['./jest.setup.js']
