@@ -16,7 +16,7 @@ Customizable UI theme for [nuxt-typo3](https://github.com/TYPO3-Initiatives/nuxt
 
 ## Requirements
 
-This module use Nuxt+TypeScript - please setup it before:
+This module uses Nuxt+TypeScript - please setup it beforehand:
 https://typescript.nuxtjs.org/guide/setup
 
 ```bash
@@ -30,7 +30,7 @@ export default {
 }
 ```
 
-Please remember to setup tsconfig.json. More info [here](https://typescript.nuxtjs.org/guide/setup/)
+Please remember to setup the `tsconfig.json`. More info [here](https://typescript.nuxtjs.org/guide/setup/)
 ## Installation 
 
 ```bash
@@ -47,13 +47,13 @@ edit `nuxt.config.js`:
   ],
 ```
 
-This module install default layouts for you, so you can see warning in the console:
+⚠️ This module installs default layouts for you, so you may see warning in the console:
 
 ```bash
 WARN  Duplicate layout registration, "default" has been registered as "./layouts.default.bc51ceba.vue"
 ```
 
-You can delete your `layouts/default.vue` file or disable layouts provided by theme:
+If this happens, you can delete your `layouts/default.vue` file or disable layouts provided by the theme in `nuxt.config.js`:
 
 ```js
   typo3theme: {
@@ -65,7 +65,7 @@ You can delete your `layouts/default.vue` file or disable layouts provided by th
 
 ### CSS
 
-You can override css by SCSS or CSS variables:
+You can override CSS by SCSS or CSS variables:
 
 `layouts/default.vue`:
 ```vue
@@ -79,11 +79,11 @@ You can override css by SCSS or CSS variables:
 </style>
 ```
 
-If you need to override SCSS variables, please use https://www.npmjs.com/package/@nuxtjs/style-resources to import them as a global.
+If you need to override SCSS variables, please use https://www.npmjs.com/package/@nuxtjs/style-resources to import them as global ones.
 
 ### Override components
 Some components are registered as a local components, for instance `UiLogo` in `CwHeader`.
-You can replace `UiLogo` by register own component as a global.
+You can replace `UiLogo` by registering your own component as a global one.
 
 `components/UiLogo.vue`
 ```html
@@ -105,7 +105,7 @@ import UiLogo from '../components/Logo.vue'
 Vue.component('UiLogo', UiLogo)
 ```
 
-Use components file as plugin in nuxt.config.js
+Use `components` file as a plugin in `nuxt.config.js`
 
 `nuxt.config.js`:
 ```js
