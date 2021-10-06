@@ -1,6 +1,6 @@
 {
   "name": "nuxt-typo3-theme",
-  "version": "0.0.2-alpha.1",
+  "version": "0.0.2-alpha.2",
   "main": "src/nuxt/module.ts",
   "types": "types/index.d.ts",
   "license": "MIT",
