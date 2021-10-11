@@ -35,6 +35,7 @@ import UiNavigation from '../UiNavigation'
 import type { UiNavbarLinks, UiNavbarLanguages } from './UiNavbar.types'
 
 export default defineComponent({
+  name: 'UiNavbar',
   components: {
     UiHamburger,
     UiNavigation,
