@@ -41,11 +41,20 @@ export default defineComponent({
     links: {
       type: Array as PropType<UiNavigationLanguageLinks>,
       required: true
+    },
+    preset: {
+      type: Object as PropType<Record<string, string>>,
+      default: () => ({
+        en: require(`svg-country-flags/svg/us.svg`)
+      })
     }
   },
   computed: {
     languages (): UiNavigationLanguageLinks {
-      const links = [...this.links]
+      let links = [...this.links]
+      links = links.filter(link =>
+        this.$typo3.i18n.locales.includes(link.twoLetterIsoCode)
+      )
       const current = {
         ...links.find((item, key) => {
           if (item.active) {
@@ -65,7 +74,12 @@ export default defineComponent({
   methods: {
     getFlagImage (twoLetterIsoCode: string): string | undefined {
       try {
-        return require(`../../../assets/flags/${twoLetterIsoCode}.svg`)
+        if (
+          Object.prototype.hasOwnProperty.call(this.preset, twoLetterIsoCode)
+        ) {
+          return this.preset[twoLetterIsoCode]
+        }
+        return require(`svg-country-flags/svg/${twoLetterIsoCode}.svg`)
       } catch {
         return undefined
       }
