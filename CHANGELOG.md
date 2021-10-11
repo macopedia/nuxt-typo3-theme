@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.2-alpha.3](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.2-alpha.2...v0.0.2-alpha.3) (2021-10-11)
+
+
+### Bug Fixes
+
+* **ui:** add missing name properties ([#17](https://github.com/macopedia/nuxt-typo3-theme/issues/17)) ([6c8bb36](https://github.com/macopedia/nuxt-typo3-theme/commit/6c8bb3632bf0c7bc9b068f0897816c1db7cb1c5a))
+* **ui:** hide flag for unavailable languages ([#15](https://github.com/macopedia/nuxt-typo3-theme/issues/15)) ([afa5d53](https://github.com/macopedia/nuxt-typo3-theme/commit/afa5d53b7b0b58bbee33e0b3ba8745461c9ab387))
+
+
+
+
+
 ## [0.0.2-alpha.2](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.2-alpha.1...v0.0.2-alpha.2) (2021-10-06)
 
 **Note:** Version bump only for package nuxt-typo3-theme
