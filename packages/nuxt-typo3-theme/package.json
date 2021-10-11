@@ -1,6 +1,7 @@
 {
   "name": "nuxt-typo3-theme",
   "version": "0.0.2-alpha.2",
+  "homepage": "https://macopedia.github.io/nuxt-typo3-theme",
   "main": "src/nuxt/module.ts",
   "types": "types/index.d.ts",
   "license": "MIT",
@@ -16,6 +17,7 @@
     "lint:styles": "stylelint **/*.{vue,scss}",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook",
+    "deploy:storybook": "yarn build:storybook && npx gh-pages -d storybook-static",
     "svg": "vsvg -s ./src/assets/icons -t ./src/components/UiIcon/svg --svgo"
   },
   "dependencies": {
@@ -23,6 +25,7 @@
     "body-scroll-lock": "^3.1.5",
     "nuxt-typo3-ce": "^0.0.2-alpha.1",
     "sanitize.css": "^12.0.1",
+    "svg-country-flags": "^1.2.10",
     "vue-mq": "^1.0.1",
     "vue-svgicon": "^3.2.9"
   },
