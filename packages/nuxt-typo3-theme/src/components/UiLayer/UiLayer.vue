@@ -15,6 +15,7 @@ import { defineComponent, PropType } from '@vue/composition-api'
 import useUiState from '../../composables/useUiState'
 import useScrollLock from '../../composables/useScrollLock'
 export default defineComponent({
+  name: 'UiLayer',
   props: {
     /**
      * @model  Is Layer open - provided by v-model
