@@ -1,7 +1,7 @@
 import {
   Breadcrumb,
   Breadcrumbs
-} from '@/components/UiBreadcrumbsList/UiBreadcrumbsList.types'
+} from '../components/UiBreadcrumbsList/UiBreadcrumbsList.types'
 export interface Navigation {
   active: number
   current: number
@@ -77,7 +77,7 @@ export interface Typo3 {
   initial: Initial
   layout: string
   locale: string
-  locales: null
+  locales: string[] | null
   page: Page
   additionalBreadcrumb: Breadcrumb
 }

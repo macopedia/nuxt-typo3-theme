@@ -15,7 +15,6 @@
 <script lang="ts">
 import { defineComponent, PropType } from '@vue/composition-api'
 import type { Breadcrumbs } from './UiBreadcrumbsList.types'
-
 import UiIcon from '../UiIcon'
 
 export default defineComponent({

@@ -2,13 +2,15 @@ import { Module } from '@nuxt/types'
 import { resolve } from 'path'
 import defu from 'defu'
 import type { TYPO3ThemeOptions } from './module.types'
+import fs from 'fs-extra'
 
 const defaults: TYPO3ThemeOptions = {
   sources: true,
   css: true,
   googleFonts: true,
   layouts: true,
-  overrideLocalComponents: false
+  overrideLocalComponents: false,
+  flags: true
 }
 
 const NuxtTypo3Theme: Module = async function (options: TYPO3ThemeOptions) {
@@ -23,6 +25,17 @@ const NuxtTypo3Theme: Module = async function (options: TYPO3ThemeOptions) {
   // this.nuxt.options.typo3.registerComponents = false
   if (options.css) {
     this.nuxt.options.css.push('nuxt-typo3-theme/src/styles/core.scss')
+  }
+
+  if (this.nuxt?.options?.typo3?.i18n?.locales) {
+    this.nuxt.options.typo3.i18n.locales.forEach((locale: string) => {
+      try {
+        fs.copy(
+          require.resolve(`svg-country-flags/svg/${locale}.svg`),
+          `assets/flags/${locale}.svg`
+        )
+      } catch (err: unknown) {}
+    })
   }
 
   if (options.googleFonts && !modulesList.includes('@nuxtjs/google-fonts')) {
