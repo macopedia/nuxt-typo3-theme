@@ -9,6 +9,8 @@ interface TYPO3ThemeOptions {
   layouts?: boolean | string[]
   /** use global components to override locals in specific scope */
   overrideLocalComponents?: boolean | string[]
+  /** copy flags from svg-country-flags */
+  flags?: boolean
 }
 
 export { TYPO3ThemeOptions }
