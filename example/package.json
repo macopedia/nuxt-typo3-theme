@@ -1,0 +1,31 @@
+{
+  "name": "demo-front",
+  "version": "1.0.0",
+  "description": "My smashing TYPO3 Nuxt.js project",
+  "author": "Adam Marcinkowski",
+  "private": true,
+  "scripts": {
+    "dev": " nuxt",
+    "build": "nuxt build",
+    "start": " nuxt-start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "nuxt": "^2.0.0",
+    "nuxt-typo3": "latest",
+    "nuxt-typo3-theme": "^0.0.3-alpha.1"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.6.0",
+    "@nuxtjs/stylelint-module": "^3.1.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^7.20.0",
+    "eslint-config-macopedia": "^0.2.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "sass": "^1.42.1",
+    "sass-loader": "10",
+    "stylelint": "^10.1.0"
+  }
+}
