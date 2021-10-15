@@ -5,18 +5,8 @@
     v-on="$listeners"
   >
     <template #label="{label}">
-      <img
-        v-if="getFlagImage(label.twoLetterIsoCode)"
-        class="flag"
-        width="28"
-        :alt="label.navigationTitle"
-        :src="getFlagImage(label.twoLetterIsoCode)"
-      />
-      <span v-else class="flag flag--label">
+      <span class="flag flag--label">
         {{ label.twoLetterIsoCode }}
-      </span>
-      <span class="label">
-        {{ label.title }}
       </span>
     </template>
   </UiNavigationList>
@@ -41,12 +31,6 @@ export default defineComponent({
     links: {
       type: Array as PropType<UiNavigationLanguageLinks>,
       required: true
-    },
-    preset: {
-      type: Object as PropType<Record<string, string>>,
-      default: () => ({
-        en: require(`svg-country-flags/svg/gb.svg`)
-      })
     }
   },
   computed: {
@@ -66,20 +50,6 @@ export default defineComponent({
       }
 
       return [current] || this.links
-    }
-  },
-  methods: {
-    getFlagImage (twoLetterIsoCode: string): string | undefined {
-      try {
-        if (
-          Object.prototype.hasOwnProperty.call(this.preset, twoLetterIsoCode)
-        ) {
-          return this.preset[twoLetterIsoCode]
-        }
-        return require(`assets/flags/${twoLetterIsoCode}.svg`)
-      } catch {
-        return undefined
-      }
     }
   }
 })
@@ -102,19 +72,11 @@ export default defineComponent({
   }
 
   .flag {
-    height: var(--space-4);
+    text-transform: uppercase;
     margin-right: var(--space-3);
 
     @include media-query($ui-navbar-break-on) {
       margin-right: 0;
-    }
-
-    &--label {
-      display: none;
-
-      @include media-query($ui-navbar-break-on) {
-        display: initial;
-      }
     }
   }
 
