@@ -9,8 +9,7 @@ const defaults: TYPO3ThemeOptions = {
   css: true,
   googleFonts: true,
   layouts: true,
-  overrideLocalComponents: false,
-  flags: true
+  overrideLocalComponents: false
 }
 
 const NuxtTypo3Theme: Module = async function (options: TYPO3ThemeOptions) {
@@ -25,17 +24,6 @@ const NuxtTypo3Theme: Module = async function (options: TYPO3ThemeOptions) {
   // this.nuxt.options.typo3.registerComponents = false
   if (options.css) {
     this.nuxt.options.css.push('nuxt-typo3-theme/src/styles/core.scss')
-  }
-
-  if (this.nuxt?.options?.typo3?.i18n?.locales) {
-    this.nuxt.options.typo3.i18n.locales.forEach((locale: string) => {
-      try {
-        fs.copy(
-          require.resolve(`svg-country-flags/svg/${locale}.svg`),
-          `assets/flags/${locale}.svg`
-        )
-      } catch (err: unknown) {}
-    })
   }
 
   if (options.googleFonts && !modulesList.includes('@nuxtjs/google-fonts')) {
