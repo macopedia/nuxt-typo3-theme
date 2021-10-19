@@ -29,8 +29,8 @@ $color-menu-pages: $palette-mercury;
 
 .ce-menu-pages {
   ul {
-    background: var(--color-menu-pages);
     font-size: var(--font-size-lg);
+    background: var(--color-menu-pages);
 
     @include media-query(md) {
       display: flex;
@@ -38,20 +38,20 @@ $color-menu-pages: $palette-mercury;
     }
 
     li {
-      padding: var(--space-4) var(--space-4);
       position: relative;
+      padding: var(--space-4) var(--space-4);
 
       ul {
         top: 100%;
+        display: none;
         min-width: 100%;
-        border-top: 1px solid var(--color-bg-secondary);
         margin-top: var(--space-4);
         margin-bottom: -1.6rem;
-        display: none;
+        border-top: 1px solid var(--color-bg-secondary);
 
         @include media-query(md) {
-          margin-top: 0;
           position: absolute;
+          margin-top: 0;
         }
 
         li {
@@ -74,38 +74,38 @@ $color-menu-pages: $palette-mercury;
           margin-right: 1rem;
 
           &::after {
-            content: '';
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);
             display: block;
-            background-size: cover;
             margin-top: 0.1rem;
+            background-size: cover;
+            transform: translateY(-50%);
+            content: '';
           }
         }
 
         &[target='_blank']::after {
-          background-image: url('../../assets/icons/externalLink.svg');
+          right: -1.8rem;
           width: 1rem;
           height: 1rem;
-          right: -1.8rem;
+          background-image: url('../../assets/icons/externalLink.svg');
         }
 
         &.has-children::after {
-          background-image: url('../../assets/icons/chevron.svg');
+          right: -2.5rem;
           width: 1.7rem;
           height: 1.1rem;
-          right: -2.5rem;
+          background-image: url('../../assets/icons/chevron.svg');
         }
       }
 
       &::before {
         position: static;
-        content: '\25CF';
+        margin-right: 1em;
+        color: currentColor;
         font-size: 0.5em;
         vertical-align: middle;
-        color: currentColor;
-        margin-right: 1em;
+        content: '\25CF';
       }
     }
   }

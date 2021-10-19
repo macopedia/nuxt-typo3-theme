@@ -4,11 +4,11 @@ import { mockData } from './CeUploads.data'
 import CeUploads from './CeUploads.vue'
 
 const CeHeaderMock = Vue.component('CeHeader', {
-  template: `<div> hello </div>`
+  template: '<div> hello </div>'
 })
 
 const NavLinkMock = Vue.component('NavLink', {
-  template: `<div> <slot/> </div>`
+  template: '<div> <slot/> </div>'
 })
 
 const CeMediaFileMock = Vue.component('CeMediaFile', {
@@ -18,7 +18,7 @@ const CeMediaFileMock = Vue.component('CeMediaFile', {
       required: true
     }
   },
-  template: `<img :src="file.publicUrl" />`
+  template: '<img :src="file.publicUrl" />'
 })
 
 describe('CeUploads', () => {

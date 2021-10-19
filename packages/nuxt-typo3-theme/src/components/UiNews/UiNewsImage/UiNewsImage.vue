@@ -73,9 +73,9 @@ export default defineComponent({
   }
 
   &__image {
-    object-fit: cover;
     width: 100%;
     min-height: 304px;
+    object-fit: cover;
   }
 }
 </style>

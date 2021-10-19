@@ -32,14 +32,14 @@ export default UiRow as typeof UiRow
   display: flex;
   flex-wrap: wrap;
   height: 100%;
-  margin-left: #{- (math.div($grid-gutter-width, 2))};
   margin-right: #{- (math.div($grid-gutter-width, 2))};
+  margin-left: #{- (math.div($grid-gutter-width, 2))};
 
   &.no-gutters {
     > .col,
     > [class*='col-'] {
-      padding-left: 0 !important;
       padding-right: 0 !important;
+      padding-left: 0 !important;
     }
   }
 }

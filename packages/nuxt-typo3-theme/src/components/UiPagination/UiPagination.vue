@@ -113,11 +113,11 @@ export default defineComponent({
   text-align: center;
 
   &__btn {
+    width: 100%;
+    min-width: 1.5em;
+    height: 1.5em;
     margin: 0 var(--space-2);
     padding: 0;
-    height: 1.5em;
-    min-width: 1.5em;
-    width: 100%;
   }
 
   &__more {
@@ -125,15 +125,15 @@ export default defineComponent({
   }
 
   &__list {
-    align-items: center;
     display: inline-flex;
+    align-items: center;
     justify-content: center;
     margin: 0;
 
     & > li {
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
     }
   }
 }

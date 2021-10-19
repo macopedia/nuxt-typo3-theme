@@ -74,8 +74,8 @@ export default defineComponent({
     padding: var(--space-2);
 
     @include media-query(sm) {
-      padding: var(--space-2) var(--space-10);
       min-width: 28.4rem;
+      padding: var(--space-2) var(--space-10);
     }
 
     @include text(xl);

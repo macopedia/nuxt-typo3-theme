@@ -65,11 +65,11 @@ export default defineComponent({
 <style lang="scss">
 .ui-news-element {
   &__btn {
-    margin-top: auto;
-    min-width: auto;
     width: 100%;
-    padding-left: var(--space-15);
+    min-width: auto;
+    margin-top: auto;
     padding-right: var(--space-15);
+    padding-left: var(--space-15);
   }
 
   &__text {

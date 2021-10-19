@@ -93,8 +93,8 @@ export default UiHeroTheme as typeof UiHeroTheme
 
 .ui-hero {
   width: 100%;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 
   &--left {
     justify-items: flex-start;

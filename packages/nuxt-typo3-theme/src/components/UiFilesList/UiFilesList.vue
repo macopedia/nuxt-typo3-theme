@@ -57,13 +57,13 @@ export default defineComponent({
   list-style: none;
 
   &__file {
-    align-items: flex-start;
     display: flex;
+    align-items: flex-start;
 
     .file__image {
-      text-align: center;
       flex: 0 0 auto;
       margin: 0 var(--space-5) 0 0;
+      text-align: center;
 
       img {
         width: 3em;

@@ -34,7 +34,7 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-transform-require-context": "^0.1.1",
     "eslint": "^7.10.0",
-    "eslint-config-macopedia": "^0.1.0",
+    "eslint-config-macopedia": "^0.2.0-alpha.1",
     "flush-promises": "^1.0.2",
     "fork-ts-checker-webpack-plugin": "^5.2.0",
     "nuxt-typo3": "^0.9.3",

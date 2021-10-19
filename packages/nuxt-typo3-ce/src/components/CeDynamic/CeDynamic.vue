@@ -47,7 +47,7 @@ export default defineComponent({
         this.$root.$options.components &&
         !this.$root.$options.components[componentName]
       ) {
-        componentName = `CeDefault`
+        componentName = 'CeDefault'
       }
 
       return createElement(componentName, {

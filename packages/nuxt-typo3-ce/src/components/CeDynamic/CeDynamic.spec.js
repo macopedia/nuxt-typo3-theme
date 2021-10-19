@@ -6,7 +6,7 @@ import CeDynamic from './CeDynamic.vue'
 const CeTextMock = {
   name: 'CeText',
   props: ['id', 'header', 'bodytext'],
-  template: `<div class="ce-text-mock"><h1>{{header}}</h1>{{bodytext}}</div>`
+  template: '<div class="ce-text-mock"><h1>{{header}}</h1>{{bodytext}}</div>'
 }
 
 describe('CeDynamic', () => {

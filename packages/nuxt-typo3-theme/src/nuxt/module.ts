@@ -2,7 +2,6 @@ import { Module } from '@nuxt/types'
 import { resolve } from 'path'
 import defu from 'defu'
 import type { TYPO3ThemeOptions } from './module.types'
-import fs from 'fs-extra'
 
 const defaults: TYPO3ThemeOptions = {
   sources: true,

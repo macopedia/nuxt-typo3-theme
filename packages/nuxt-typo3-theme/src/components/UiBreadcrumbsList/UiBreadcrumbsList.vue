@@ -38,9 +38,9 @@ export default defineComponent({
 
 <style lang="scss">
 .ui-breadcrumbs {
-  margin: var(--space-3) 0;
   display: flex;
   align-items: baseline;
+  margin: var(--space-3) 0;
 
   &__list {
     display: flex;

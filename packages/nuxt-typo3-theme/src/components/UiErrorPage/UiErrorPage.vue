@@ -42,8 +42,8 @@ export default defineComponent({
 <style lang="scss">
 .error {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 
   .error__logo {
     margin: 5rem 0;

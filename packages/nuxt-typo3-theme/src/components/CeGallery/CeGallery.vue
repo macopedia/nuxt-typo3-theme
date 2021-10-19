@@ -167,8 +167,8 @@ export default CeGalleryTheme as typeof CeGallery & typeof CeGalleryTheme
     }
 
     figcaption {
-      font-weight: var(--font-weight-medium);
       margin-bottom: var(--space-3);
+      font-weight: var(--font-weight-medium);
       text-align: left;
     }
   }

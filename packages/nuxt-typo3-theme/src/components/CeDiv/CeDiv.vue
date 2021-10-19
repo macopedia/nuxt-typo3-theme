@@ -32,10 +32,10 @@ $divider-color-layout-1: $palette-gallery;
 }
 
 .ce-div {
-  height: 1px;
   display: block;
-  border: none;
+  height: 1px;
   background: var(--color-divider);
+  border: none;
 
   &--layout-1 {
     background: var(--color-divider-layout-1);
