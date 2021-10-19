@@ -33,11 +33,12 @@ export default defineComponent({
 @import '../../styles/shared';
 
 .ui-links-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 
   &__link {
+    color: var(--color-text-primary-inverted);
     text-decoration: none;
 
     @include text(xl);
@@ -45,8 +46,6 @@ export default defineComponent({
     @include media-query(lg) {
       @include text(md);
     }
-
-    color: var(--color-text-primary-inverted);
   }
 
   &__item {

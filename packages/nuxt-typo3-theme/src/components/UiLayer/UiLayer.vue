@@ -111,9 +111,9 @@ $ui-layer-bg: $palette-white !default;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: $z-index-overlay;
   width: 100%;
   overflow: auto;
   background-color: var(--ui-layer-bg);
-  z-index: $z-index-overlay;
 }
 </style>

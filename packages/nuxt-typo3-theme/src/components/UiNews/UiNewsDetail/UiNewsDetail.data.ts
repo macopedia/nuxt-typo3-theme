@@ -29,9 +29,9 @@ export const detailElementMockup: NewsDetailElement = {
           columnSpacing: 10,
           border: { enabled: false, width: 2, padding: 0 },
           rows: {
-            '1': {
+            1: {
               columns: {
-                '1': {
+                1: {
                   publicUrl: 'https://via.placeholder.com/1366x695',
                   properties: {
                     title: null,

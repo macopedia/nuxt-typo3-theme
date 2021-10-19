@@ -15,7 +15,7 @@ describe('UiFrame', () => {
       CeDiv
     },
     slots: {
-      default: `<CeDiv />`
+      default: '<CeDiv />'
     }
   }
 
@@ -52,7 +52,7 @@ describe('UiFrame', () => {
         CeDiv
       },
       slots: {
-        default: `<CeDiv />`
+        default: '<CeDiv />'
       }
     })
 

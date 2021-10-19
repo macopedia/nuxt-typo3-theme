@@ -72,8 +72,8 @@ export default defineComponent({
   }
 
   .flag {
-    text-transform: uppercase;
     margin-right: var(--space-3);
+    text-transform: uppercase;
 
     @include media-query($ui-navbar-break-on) {
       margin-right: 0;

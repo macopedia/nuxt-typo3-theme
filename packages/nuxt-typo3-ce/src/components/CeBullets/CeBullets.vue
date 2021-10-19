@@ -36,7 +36,7 @@ export default defineComponent({
     bulletsType: {
       type: Number,
       default: 0
-    },
+    }
   },
   setup (props: CeSharedProps) {
     const sharedProps = getSharedProps(props)

@@ -33,10 +33,10 @@ export default defineComponent({
 <style lang="scss">
 .ui-news-list {
   &__article {
-    padding-bottom: var(--space-5);
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding-bottom: var(--space-5);
   }
 
   .ui-news-image__title {

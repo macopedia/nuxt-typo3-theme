@@ -5,7 +5,7 @@ import { mockData } from './CeUploads.data'
 import CeUploads from './CeUploads.vue'
 Vue.use(VueCompositionApi)
 const CeHeaderMock = Vue.component('CeHeader', {
-  template: `<div> hello </div>`
+  template: '<div> hello </div>'
 })
 
 describe('CeUploads', () => {

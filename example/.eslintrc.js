@@ -4,9 +4,6 @@ module.exports = {
     browser: true,
     node: true
   },
-  rules: {
-    'prettierx/options': ['error', { semi: false }]
-  },
-  extends: ['macopedia/vue']
+  extends: ['macopedia/nuxt']
   // add your custom rules here
 }

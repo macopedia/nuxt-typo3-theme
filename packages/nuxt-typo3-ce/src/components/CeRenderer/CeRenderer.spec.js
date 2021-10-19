@@ -7,7 +7,7 @@ import CeDynamic from '../CeDynamic'
 // Mock CeDynamic
 const CeDynamicMock = {
   props: ['data', 'type', 'index'],
-  template: `<div class="ce-dnymaic">{{JSON.stringify($props)}}</div>`
+  template: '<div class="ce-dnymaic">{{JSON.stringify($props)}}</div>'
 }
 
 // Mock CeFrame
@@ -17,7 +17,7 @@ const CeFrameMock = {
 
 const CeDefault = {
   props: ['data', 'type', 'index'],
-  template: `<div class="ce-default">{{JSON.stringify($props)}}</div>`
+  template: '<div class="ce-default">{{JSON.stringify($props)}}</div>'
 }
 
 describe('CeRenderer with mocked components', () => {
@@ -29,7 +29,7 @@ describe('CeRenderer with mocked components', () => {
   const wrappedRenderer = {
     inheritAttrs: false,
     components: { CeRenderer },
-    template: `<div><CeRenderer v-bind="$attrs"/></div>`
+    template: '<div><CeRenderer v-bind="$attrs"/></div>'
   }
 
   const prepareFrame = {
@@ -83,7 +83,7 @@ describe('CeRenderer with true components', () => {
   const wrappedRenderer = {
     inheritAttrs: false,
     components: { CeRenderer },
-    template: `<div><CeRenderer v-bind="$attrs"/></div>`
+    template: '<div><CeRenderer v-bind="$attrs"/></div>'
   }
 
   const prepareFrame = {

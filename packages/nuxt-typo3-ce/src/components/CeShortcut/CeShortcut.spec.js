@@ -6,7 +6,7 @@ import CeRenderer from '../CeRenderer'
 // Mock CeDynamic
 const CeDynamicMock = {
   props: ['data', 'type', 'index'],
-  template: `<div class="ce-dnymaic">{{JSON.stringify($props)}}</div>`
+  template: '<div class="ce-dnymaic">{{JSON.stringify($props)}}</div>'
 }
 
 // Mock CeFrame

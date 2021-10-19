@@ -31,10 +31,10 @@ export default UiContainer as typeof UiContainer
 
 .container {
   width: 100%;
-  margin-left: auto;
   margin-right: auto;
-  padding-left: #{math.div($grid-gutter-width, 2)};
+  margin-left: auto;
   padding-right: #{math.div($grid-gutter-width, 2)};
+  padding-left: #{math.div($grid-gutter-width, 2)};
 
   @include media-query(sm) {
     max-width: map.get($container-max-widths, sm);

@@ -11126,10 +11126,10 @@ eslint-config-airbnb-base@^14.2.1:
     object.assign "^4.1.2"
     object.entries "^1.1.2"
 
-eslint-config-macopedia@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-macopedia/-/eslint-config-macopedia-0.1.0.tgz#370bdb82ca0f756df71655ab581a954fb0a0127a"
-  integrity sha512-9+bNu3yq5V1b+wejIw8AJ7cbEP4SuqnMHdsxyP0o0prMp9GHPu5r83n561B9TRVJcGL8J7SYX9WQUGHBoK2/Rg==
+eslint-config-macopedia@^0.2.0-alpha.1:
+  version "0.2.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-macopedia/-/eslint-config-macopedia-0.2.0-alpha.1.tgz#3879d5631aaaa062d64df6b5c26d385563f70abb"
+  integrity sha512-azY25FN0OfbZArZ2xMYKGQD6HCQlvLqMd849ARwBsOzqQUpOYmd7X6Lj0+Ro70OqrkfWsgga3ZX0JzzZMBXbRQ==
   dependencies:
     "@nuxtjs/eslint-config" "^5.0.0"
     "@nuxtjs/eslint-config-typescript" "^5.0.0"
@@ -11151,6 +11151,7 @@ eslint-config-macopedia@^0.1.0:
     eslint-plugin-standard "^5.0.0"
     eslint-plugin-vue "^7.6.0"
     stylelint-config-css-modules "^2.2.0"
+    stylelint-config-rational-order "^0.1.2"
     stylelint-config-recommended-scss "^4.2.0"
     stylelint-config-standard "^20.0.0"
 

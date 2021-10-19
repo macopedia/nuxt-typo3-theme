@@ -63,9 +63,9 @@ export const CeRendererMockData = {
             padding: 0
           },
           rows: {
-            '1': {
+            1: {
               columns: {
-                '1': {
+                1: {
                   publicUrl: 'https://image.jpg',
                   properties: {
                     title: null,

@@ -35,21 +35,21 @@
 
       &::before {
         position: static;
-        content: '\25CF';
+        margin-right: 1.25em;
+        color: currentColor;
         font-size: 0.5em;
         vertical-align: middle;
-        color: currentColor;
-        margin-right: 1.25em;
+        content: '\25CF';
       }
     }
   }
 
   ul,
   ol {
-    margin-left: 0;
-    padding-left: var(--space-2);
     margin-top: var(--space-4);
     margin-bottom: var(--space-4);
+    margin-left: 0;
+    padding-left: var(--space-2);
 
     li {
       margin-bottom: var(--space-2);

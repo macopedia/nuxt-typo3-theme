@@ -4965,10 +4965,10 @@ eslint-config-airbnb-base@^14.2.1:
     object.assign "^4.1.2"
     object.entries "^1.1.2"
 
-eslint-config-macopedia@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-macopedia/-/eslint-config-macopedia-0.2.0.tgz#7ec68c8b677f55c41001c575702a1603924de193"
-  integrity sha512-Wa2gHBCbVwG6C2wCNm2/i70bnMXMmk7pAyB7ldCBAYOGxd4cFzu3QpwjKZCsF3X7lmSbXOjjmjLslRwetPe5qg==
+eslint-config-macopedia@^0.2.0-alpha.1:
+  version "0.2.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-macopedia/-/eslint-config-macopedia-0.2.0-alpha.1.tgz#3879d5631aaaa062d64df6b5c26d385563f70abb"
+  integrity sha512-azY25FN0OfbZArZ2xMYKGQD6HCQlvLqMd849ARwBsOzqQUpOYmd7X6Lj0+Ro70OqrkfWsgga3ZX0JzzZMBXbRQ==
   dependencies:
     "@nuxtjs/eslint-config" "^5.0.0"
     "@nuxtjs/eslint-config-typescript" "^5.0.0"
