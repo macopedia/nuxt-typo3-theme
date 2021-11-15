@@ -129,7 +129,6 @@ export default defineComponent({
   z-index: $z-index-over;
   width: 100%;
   background: var(--ui-navbar-bg);
-  border-bottom: 1px solid transparent;
   box-shadow: var(--box-shadow-base);
 
   @include media-query($ui-navbar-break-on) {

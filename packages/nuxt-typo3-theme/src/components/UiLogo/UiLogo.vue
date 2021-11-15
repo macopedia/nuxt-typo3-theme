@@ -1,10 +1,11 @@
 <template>
-  <CeLink class="ui-logo" to="/"
-    ><img
-      :style="{ filter: invert ? 'invert(1)' : 'none' }"
+  <CeLink class="ui-logo" to="/">
+    <img
+      :style="{ filter: invert ? 'invert(1)' : 'none', width: `${width}px` }"
       :src="src"
       :alt="alt"
-  /></CeLink>
+    />
+  </CeLink>
 </template>
 <script lang="ts">
 import { defineComponent } from '@vue/composition-api'

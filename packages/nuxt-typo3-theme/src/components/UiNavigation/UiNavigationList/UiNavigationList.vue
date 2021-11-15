@@ -116,8 +116,7 @@ export default defineComponent({
       flex-direction: column;
       min-width: 100%;
       background: var(--ui-navbar-bg);
-      border: 1px solid black;
-      border-top: 0;
+      box-shadow: var(--box-shadow-base);
 
       li {
         width: 100%;

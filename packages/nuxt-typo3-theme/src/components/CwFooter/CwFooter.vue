@@ -2,10 +2,10 @@
   <footer class="cw-footer">
     <UiContainer class="cw-footer__container">
       <UiRow>
-        <UiCol col="lg">
-          <UiLogo :width="64" invert />
+        <UiCol col="sm">
+          <UiLogo />
         </UiCol>
-        <UiCol v-if="footerNavigation" col="lg">
+        <UiCol v-if="footerNavigation" col="8">
           <UiLinksList :links="footerNavigation" />
         </UiCol>
         <UiCol v-if="footerContactData" col="lg">
@@ -50,7 +50,7 @@ export default CwFooterTheme as typeof CwFooterTheme
 
 .cw-footer {
   padding: var(--space-6) 0;
-  background: var(--color-bg-primary);
+  background: var(--color-bg-secondary);
 
   &__text {
     .ce-header {
@@ -58,10 +58,6 @@ export default CwFooterTheme as typeof CwFooterTheme
         font-size: var(--font-size-3xl);
       }
     }
-  }
-
-  @include media-query(lg) {
-    background: var(--color-bg-secondary);
   }
 
   .col {

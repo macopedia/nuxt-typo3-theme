@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12" :class="[colClasses]">
+  <div :class="[colClasses]">
     <slot />
     <UiOffset v-if="offset" />
     <UiOrder v-if="order" />
