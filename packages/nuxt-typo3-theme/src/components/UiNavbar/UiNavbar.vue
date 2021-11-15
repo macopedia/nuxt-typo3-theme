@@ -149,7 +149,7 @@ export default defineComponent({
   }
 
   &__logo {
-    flex: 1;
+    flex: 0 1 200px;
   }
 
   &__nav {

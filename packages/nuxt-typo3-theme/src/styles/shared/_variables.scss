@@ -2,7 +2,7 @@
 // ==========
 // Setup family fallback when primary is not available yet
 $font-family-fallback: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif' !default;
-$font-family-primary: "Jost", #{$font-family-fallback} !default;
+$font-family-primary: "Rubik", #{$font-family-fallback} !default;
 
 // Main copy font-size - body tag and all inherited elements
 $font-size-2xs: 0.75rem !default;

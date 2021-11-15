@@ -119,11 +119,11 @@ export default defineComponent({
   &.nuxt-link-exact-active {
     @include media-query(max-width $ui-navbar-break-on) {
       color: #fff;
-      background: var(--color-bg-secondary);
+      background: var(--color-primary);
     }
 
     @include media-query($ui-navbar-break-on) {
-      border-color: var(--color-bg-secondary);
+      border-color: var(--color-primary);
     }
   }
 

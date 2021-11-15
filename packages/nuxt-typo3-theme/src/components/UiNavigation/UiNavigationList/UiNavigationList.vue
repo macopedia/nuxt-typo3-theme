@@ -115,7 +115,7 @@ export default defineComponent({
       position: absolute;
       flex-direction: column;
       min-width: 100%;
-      background: white;
+      background: var(--ui-navbar-bg);
       border: 1px solid black;
       border-top: 0;
 
