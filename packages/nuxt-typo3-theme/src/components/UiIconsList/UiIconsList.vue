@@ -1,6 +1,6 @@
 <template>
   <div class="ui-icons-list">
-    <CeLink
+    <T3NavLink
       v-for="(icon, i) in icons"
       :key="i"
       class="ui-icons-list__item"
@@ -12,7 +12,7 @@
         :src="require(`../../assets/socials/${icon.icon.toLowerCase()}.svg`)"
         :alt="icon.title"
       />
-    </CeLink>
+    </T3NavLink>
   </div>
 </template>
 <script lang="ts">

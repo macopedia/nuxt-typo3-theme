@@ -1,32 +1,32 @@
 import Vue from 'vue'
 import ThemePlugin from 'nuxt-typo3-theme/src/plugin'
-import CeFrame from 'nuxt-typo3-theme/src/components/CeFrame'
+import T3Frame from 'nuxt-typo3-theme/src/components/T3Frame'
 import Store from 'nuxt-typo3-theme/src/store/index'
-import CeText from 'nuxt-typo3-theme/src/components/CeText'
-import CeTextpic from 'nuxt-typo3-theme/src/components/CeTextpic'
-import CeHeader from 'nuxt-typo3-theme/src/components/CeHeader'
-import CeGallery from 'nuxt-typo3-theme/src/components/CeGallery'
-import CeImage from 'nuxt-typo3-theme/src/components/CeImage'
-import CeMenuPages from 'nuxt-typo3-theme/src/components/CeMenuPages'
-import CeDiv from 'nuxt-typo3-theme/src/components/CeDiv'
-import CeNewsPi1 from 'nuxt-typo3-theme/src/components/CeNewsPi1'
-import CeUploads from 'nuxt-typo3-theme/src/components/CeUploads'
+import T3CeText from 'nuxt-typo3-theme/src/components/T3CeText'
+import T3CeTextpic from 'nuxt-typo3-theme/src/components/T3CeTextpic'
+import T3CeHeader from 'nuxt-typo3-theme/src/components/T3CeHeader'
+import T3CeGallery from 'nuxt-typo3-theme/src/components/T3CeGallery'
+import T3CeImage from 'nuxt-typo3-theme/src/components/T3CeImage'
+import T3CeMenuPages from 'nuxt-typo3-theme/src/components/T3CeMenuPages'
+import T3CeDiv from 'nuxt-typo3-theme/src/components/T3CeDiv'
+import T3CeNewsPi1 from 'nuxt-typo3-theme/src/components/T3CeNewsPi1'
+import T3CeUploads from 'nuxt-typo3-theme/src/components/T3CeUploads'
 import { Context } from '@nuxt/types'
 
 // temporary until we refactore all CE
 // because we can't override CE from vue plugin level
 const globalComponents: Record<string, typeof Vue> = {
-  CeFrame,
-  CeText,
-  CeDiv,
-  CeImage,
-  CeMenuPages,
-  CeMenuSubpages: CeMenuPages,
-  CeTextpic,
-  CeHeader,
-  CeNewsPi1,
-  CeGallery,
-  CeUploads
+  T3Frame,
+  T3CeText,
+  T3CeDiv,
+  T3CeImage,
+  T3CeMenuPages,
+  T3CeMenuSubpages: T3CeMenuPages,
+  T3CeTextpic,
+  T3CeHeader,
+  T3CeNewsPi1,
+  T3CeGallery,
+  T3CeUploads
 }
 
 export default (nuxtContext: Context): void => {

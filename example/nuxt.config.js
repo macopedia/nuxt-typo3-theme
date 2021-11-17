@@ -50,8 +50,10 @@ export default {
    */
   typo3: {
     baseURL: process.env.NUXT_HOST,
+    registerForms: true,
     api: {
       baseURL: 'https://api.t3pwa.com'
+      // baseURL: 'https://api.pwa-demo.ddev.site'
     },
     i18n: {
       locales: ['en', 'pl', 'de'],
@@ -65,6 +67,7 @@ export default {
    ** Build configuration
    */
   build: {
+    transpile: ['nuxt-typo3'],
     /*
      ** You can extend webpack config here
      */

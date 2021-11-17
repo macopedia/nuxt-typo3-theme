@@ -1,7 +1,7 @@
 <template>
   <UiNewsWrapper :image="mainImageData" :date="article.detail.datetime">
     <template #content>
-      <CeText
+      <T3CeText
         class="ui-news-detail__text"
         :header-layout="1"
         :header="article.detail.title"

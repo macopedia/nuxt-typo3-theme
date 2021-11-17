@@ -1,6 +1,6 @@
 import { PropType } from '@vue/composition-api'
 
-export type CeAppearanceSpace =
+export type T3CeAppearanceSpace =
   | 'default'
   | 'extra-small'
   | 'small'
@@ -9,7 +9,7 @@ export type CeAppearanceSpace =
   | 'extra-large'
   | string
 
-export type CeAppearanceFrameClass =
+export type T3CeAppearanceFrameClass =
   | 'default'
   | 'ruler-before'
   | 'ruler-after'
@@ -19,18 +19,18 @@ export type CeAppearanceFrameClass =
   | 'none'
   | string
 
-export interface CeAppearanceInterface {
-  frameClass: CeAppearanceFrameClass
+export interface T3CeAppearanceInterface {
+  frameClass: T3CeAppearanceFrameClass
   layout: string
-  spaceAfter: CeAppearanceSpace
-  spaceBefore: CeAppearanceSpace
+  spaceAfter: T3CeAppearanceSpace
+  spaceBefore: T3CeAppearanceSpace
 }
-export interface CeAppearanceProps {
+export interface T3CeAppearanceProps {
   /**
    * Frame main css class
    */
   frameClass: {
-    type: PropType<CeAppearanceFrameClass>
+    type: PropType<T3CeAppearanceFrameClass>
     default: ''
   }
   /**
@@ -44,14 +44,14 @@ export interface CeAppearanceProps {
    * Bottom space
    */
   spaceAfter: {
-    type: PropType<CeAppearanceSpace>
+    type: PropType<T3CeAppearanceSpace>
     default: 'default'
   }
   /**
    * Top space
    */
   spaceBefore: {
-    type: PropType<CeAppearanceSpace>
+    type: PropType<T3CeAppearanceSpace>
     default: 'default'
   }
 }

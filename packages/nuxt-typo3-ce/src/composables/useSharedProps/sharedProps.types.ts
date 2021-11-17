@@ -1,7 +1,7 @@
-import { CeHeaderLink, CeHeaderPosition } from 'nuxt-typo3-ce/types'
+import { T3CeHeaderLink, T3CeHeaderPosition } from 'nuxt-typo3-ce/types'
 import { PropType } from '@vue/composition-api'
 
-export interface CeSharedProps {
+export interface T3CeSharedProps {
   /**
    * ID of CE / TYPO3 UID
    */
@@ -34,7 +34,7 @@ export interface CeSharedProps {
    * Header alignment / TYPO3 header_position
    */
   headerPosition: {
-    type: PropType<CeHeaderPosition>
+    type: PropType<T3CeHeaderPosition>
     default: ''
   }
   /**
@@ -48,7 +48,7 @@ export interface CeSharedProps {
    * Header link / TYPO3 header_link
    */
   headerLink: {
-    type: PropType<CeHeaderLink>
+    type: PropType<T3CeHeaderLink>
     default: ''
   }
   /**

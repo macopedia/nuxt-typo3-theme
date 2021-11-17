@@ -51,7 +51,7 @@ export default defineComponent({
   },
   computed: {
     tag (): string {
-      return this.item.children ? 'span' : 'CeLink'
+      return this.item.children ? 'span' : 'T3NavLink'
     },
     toAttribute (): string | null {
       return this.item.children ? null : this.item.link

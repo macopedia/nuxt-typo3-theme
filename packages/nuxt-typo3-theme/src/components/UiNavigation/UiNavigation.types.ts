@@ -1,4 +1,4 @@
-import type { CeMenuPagesItem } from 'nuxt-typo3-ce/types'
+import type { T3CeMenuPagesItem } from 'nuxt-typo3-ce/types'
 
-export type UiNavigationLink = CeMenuPagesItem
+export type UiNavigationLink = T3CeMenuPagesItem
 export type UiNavigationLinks = UiNavigationLink[]

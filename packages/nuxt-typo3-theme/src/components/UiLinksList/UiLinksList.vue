@@ -1,11 +1,11 @@
 <template>
   <ul class="ui-links-list">
     <li v-for="(link, i) in links" :key="i" class="ui-links-list__item">
-      <CeLink
+      <T3NavLink
         class="ui-links-list__link"
         :target="link.target || '_self'"
         :to="link.link"
-        >{{ link.title }}</CeLink
+        >{{ link.title }}</T3NavLink
       >
     </li>
   </ul>

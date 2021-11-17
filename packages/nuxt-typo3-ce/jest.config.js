@@ -5,6 +5,9 @@ module.exports = {
     '^.+\\.js$': 'babel-jest',
     '^.+\\.vue$': 'vue-jest'
   },
+  transformIgnorePatterns: [
+    '<rootDir>/node_modules/(?!nuxt-typo3)',
+  ],
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
     '^~/(.*)$': '<rootDir>/$1',

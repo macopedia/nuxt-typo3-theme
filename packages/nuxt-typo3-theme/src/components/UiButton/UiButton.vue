@@ -1,8 +1,8 @@
 <template>
-  <CeLink class="btn" :class="[`btn--${size}`, `btn--${variant}`]" :to="to">
+  <T3NavLink class="btn" :class="[`btn--${size}`, `btn--${variant}`]" :to="to">
     <!-- @slot Button content -->
     <slot />
-  </CeLink>
+  </T3NavLink>
 </template>
 <script lang="ts">
 import { PropType, defineComponent } from '@vue/composition-api'
