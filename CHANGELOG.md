@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.3-alpha.2](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.3-alpha.1...v0.0.3-alpha.2) (2021-11-17)
+
+
+### Bug Fixes
+
+* **CI:** add prepare script ([#27](https://github.com/macopedia/nuxt-typo3-theme/issues/27)) ([72d9abe](https://github.com/macopedia/nuxt-typo3-theme/commit/72d9abee5690113885e36cf5360c7069f787d908))
+
+
+### Features
+
+* **example:** create example ([#25](https://github.com/macopedia/nuxt-typo3-theme/issues/25)) ([7489144](https://github.com/macopedia/nuxt-typo3-theme/commit/74891445d6182dbfed42caa92c96e6ca372e7b2c))
+
+
+
+
+
 ## [0.0.3-alpha.1](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.3-alpha.0...v0.0.3-alpha.1) (2021-10-15)
 
 **Note:** Version bump only for package nuxt-typo3-theme
