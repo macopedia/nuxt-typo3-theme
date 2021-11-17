@@ -13,7 +13,7 @@
             {{ header }}
           </component>
           <template v-if="!isSubpage">
-            <CeHtmlParser v-if="bodytext" :content="bodytext" />
+            <T3CeHtmlParser v-if="bodytext" :content="bodytext" />
             <UiButton
               v-if="subheader"
               :to="headerLink"

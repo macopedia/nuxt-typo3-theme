@@ -7,64 +7,51 @@ export type TYPO3CeInstance<T> = T extends new (...args: any[]) => infer R
   : never
 
 // Components
-export type CeHeader = VueConstructor<Vue>
-export type CeTable = VueConstructor<Vue>
-export type CeBullets = VueConstructor<Vue>
-export type CeDefault = VueConstructor<Vue>
-export type CeDiv = VueConstructor<Vue>
-export type CeDynamic = VueConstructor<Vue>
-export type CeFrame = VueConstructor<Vue>
-export type CeGallery = VueConstructor<Vue>
-export type CeHtml = VueConstructor<Vue>
-export type CeHtmlParser = VueConstructor<Vue>
-export type CeImage = VueConstructor<Vue>
-export type CeLink = VueConstructor<Vue>
-export type CeMenuPages = VueConstructor<Vue>
-export type CeRenderer = VueConstructor<Vue>
-export type CeShortcut = VueConstructor<Vue>
-export type CeText = VueConstructor<Vue>
-export type CeTextpic = VueConstructor<Vue>
+export type T3CeHeader = VueConstructor<Vue>
+export type T3CeTable = VueConstructor<Vue>
+export type T3CeBullets = VueConstructor<Vue>
+export type T3CeDefault = VueConstructor<Vue>
+export type T3CeDiv = VueConstructor<Vue>
+export type T3CeGallery = VueConstructor<Vue>
+export type T3CeHtml = VueConstructor<Vue>
+export type T3CeHtmlParser = VueConstructor<Vue>
+export type T3CeImage = VueConstructor<Vue>
+export type T3CeRenderer = VueConstructor<Vue>
+export type T3CeShortcut = VueConstructor<Vue>
+export type T3CeText = VueConstructor<Vue>
+export type T3CeTextpic = VueConstructor<Vue>
 
 // Components prop
 // Shared props interface
-export { CeSharedProps } from '../src/composables/useSharedProps/sharedProps.types'
+export { T3CeSharedProps } from '../src/composables/useSharedProps/sharedProps.types'
 export {
-  CeAppearanceInterface,
-  CeAppearanceProps
+  T3CeAppearanceInterface,
+  T3CeAppearanceProps
 } from '../src/composables/useAppearanceProps/appearanceProps.types'
 
-export { File, FileList } from '../src/components/CeUploads/CeUploads.types'
+export { File, FileList } from '../src/components/T3CeUploads/T3CeUploads.types'
 
 export { UrlMethods } from '../src/composables/useUrlMethods/useUrlMethods.types'
 
-// CeDynamic
+// T3CeHeader
 export {
-  CeDynamicInterface,
-  CeDynamicData
-} from '../src/components/CeDynamic/CeDynamic.types'
+  T3CeHeaderPosition,
+  T3CeHeaderLink,
+  T3CeHeaderTags
+} from '../src/components/T3CeHeader/T3CeHeader.types'
 
-// CeRenderer
-export { CeRendererContentItem } from '../src/components/CeRenderer/CeRenderer.types'
-
-// CeHeader
+// T3CeMenuPages
 export {
-  CeHeaderPosition,
-  CeHeaderLink,
-  CeHeaderTags
-} from '../src/components/CeHeader/CeHeader.types'
+  T3CeMenuPagesMenu,
+  T3CeMenuPagesItem
+} from '../src/components/T3CeMenuPages/T3CeMenuPages.types'
 
-// CeMenuPages
-export {
-  CeMenuPagesMenu,
-  CeMenuPagesItem
-} from '../src/components/CeMenuPages/CeMenuPages.types'
-
-// CeGallery
+// T3CeGallery
 export {
   FileProperties,
-  CeGalleryFile,
-  CeGalleryProp
-} from '../src/components/CeGallery/CeGallery.types'
+  T3CeGalleryFile,
+  T3CeGalleryProp
+} from '../src/components/T3CeGallery/T3CeGallery.types'
 
 export type UiPlugin = PluginObject<UiPlugin>
 export default UiPlugin

@@ -9,7 +9,7 @@ describe('UiNavigation', () => {
     wrapper = mount(UiNavigation, {
       stubs: {
         NuxtLink: RouterLinkStub,
-        CeLink: RouterLinkStub,
+        T3NavLink: RouterLinkStub,
         SvgIcon: true
       },
       propsData: {

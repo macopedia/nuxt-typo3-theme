@@ -9,7 +9,7 @@
           <UiLinksList :links="footerNavigation" />
         </UiCol>
         <UiCol v-if="footerContactData" col="lg">
-          <CeText
+          <T3CeText
             class="cw-footer__text"
             :header="footerContactData.header"
             :header-layout="2"
@@ -53,7 +53,7 @@ export default CwFooterTheme as typeof CwFooterTheme
   background: var(--color-bg-primary);
 
   &__text {
-    .ce-header {
+    .t3-ce-header {
       h2 {
         font-size: var(--font-size-3xl);
       }

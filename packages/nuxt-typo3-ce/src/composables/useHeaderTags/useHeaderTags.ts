@@ -1,4 +1,4 @@
-import { CeHeaderTags } from 'nuxt-typo3-ce/types'
+import { T3CeHeaderTags } from 'nuxt-typo3-ce/types'
 import { computed, Ref } from '@vue/composition-api'
 
 /**
@@ -7,7 +7,7 @@ import { computed, Ref } from '@vue/composition-api'
 export default function useHeaderTags (
   headerLayout: Ref<number>,
   headerPosition?: Ref<string>
-): CeHeaderTags {
+): T3CeHeaderTags {
   // fallback if someone pass layout as a string
   const parsedLayout =
     typeof headerLayout.value === 'string'
@@ -17,7 +17,7 @@ export default function useHeaderTags (
   const subheaderTag = computed((): string => `h${(parsedLayout || 1) + 1}`)
   const headerCss = computed(
     (): string =>
-      `ce-header--${
+      `t3-ce-header--${
         headerPosition && headerPosition.value ? headerPosition.value : 'left'
       }`
   )

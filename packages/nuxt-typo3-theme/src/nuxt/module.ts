@@ -76,3 +76,5 @@ const NuxtTypo3Theme: Module = async function (options: TYPO3ThemeOptions) {
 }
 
 export default NuxtTypo3Theme
+module.exports = NuxtTypo3Theme
+module.exports.meta = require('../../package.json')

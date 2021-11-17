@@ -6,16 +6,16 @@ import NuxtTypo3Ce from 'nuxt-typo3-ce'
 import type { TYPO3ThemeOptions } from '../nuxt/module.types'
 import useOverrideLocalComponents from '../composables/useOverrideLocalComponents'
 
-import CeFrame from 'nuxt-typo3-theme/src/components/CeFrame'
-import CeText from 'nuxt-typo3-theme/src/components/CeText'
-import CeTextpic from 'nuxt-typo3-theme/src/components/CeTextpic'
-import CeHeader from 'nuxt-typo3-theme/src/components/CeHeader'
-import CeGallery from 'nuxt-typo3-theme/src/components/CeGallery'
-import CeImage from 'nuxt-typo3-theme/src/components/CeImage'
-import CeMenuPages from 'nuxt-typo3-theme/src/components/CeMenuPages'
-import CeBullets from 'nuxt-typo3-theme/src/components/CeBullets'
-import CeDiv from 'nuxt-typo3-theme/src/components/CeDiv'
-import CeHtmlParser from 'nuxt-typo3-theme/src/components/CeHtmlParser'
+import T3Frame from 'nuxt-typo3-theme/src/components/T3Frame'
+import T3CeText from 'nuxt-typo3-theme/src/components/T3CeText'
+import T3CeTextpic from 'nuxt-typo3-theme/src/components/T3CeTextpic'
+import T3CeHeader from 'nuxt-typo3-theme/src/components/T3CeHeader'
+import T3CeGallery from 'nuxt-typo3-theme/src/components/T3CeGallery'
+import T3CeImage from 'nuxt-typo3-theme/src/components/T3CeImage'
+import T3CeMenuPages from 'nuxt-typo3-theme/src/components/T3CeMenuPages'
+import T3CeBullets from 'nuxt-typo3-theme/src/components/T3CeBullets'
+import T3CeDiv from 'nuxt-typo3-theme/src/components/T3CeDiv'
+import T3CeHtmlParser from 'nuxt-typo3-theme/src/components/T3CeHtmlParser'
 import UiFrame from 'nuxt-typo3-theme/src/components/UiFrame'
 
 import {
@@ -28,17 +28,17 @@ import {
 
 const globalComponents: Record<string, Vue.VueConstructor> = {
   UiFrame,
-  CeFrame,
-  CeText,
-  CeDiv,
-  CeImage,
-  CeMenuPages,
-  CeMenuSubpages: CeMenuPages,
-  CeTextpic,
-  CeBullets,
-  CeHeader,
-  CeGallery,
-  CeHtmlParser,
+  T3Frame,
+  T3CeText,
+  T3CeDiv,
+  T3CeImage,
+  T3CeMenuPages,
+  T3CeMenuSubpages: T3CeMenuPages,
+  T3CeTextpic,
+  T3CeBullets,
+  T3CeHeader,
+  T3CeGallery,
+  T3CeHtmlParser,
   UiContainer,
   UiRow,
   UiCol,
