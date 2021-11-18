@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.3-alpha.4](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.3-alpha.3...v0.0.3-alpha.4) (2021-11-18)
+
+
+### Features
+
+* make it compatible with nuxt-typo3 1.0.0 ([#33](https://github.com/macopedia/nuxt-typo3-theme/issues/33)) ([96871e3](https://github.com/macopedia/nuxt-typo3-theme/commit/96871e3a5f43258053bb1830b33ae07b80d3c3d4))
+
+
+
+
+
 ## [0.0.3-alpha.3](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.3-alpha.2...v0.0.3-alpha.3) (2021-11-17)
 
 **Note:** Version bump only for package nuxt-typo3-ce
