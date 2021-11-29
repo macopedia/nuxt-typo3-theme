@@ -50,7 +50,7 @@ export default {
    */
   typo3: {
     baseURL: process.env.NUXT_HOST,
-    registerForms: true,
+    forms: true,
     api: {
       baseURL: 'https://api.t3pwa.com'
       // baseURL: 'https://api.pwa-demo.ddev.site'

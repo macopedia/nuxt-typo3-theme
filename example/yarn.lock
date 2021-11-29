@@ -8556,10 +8556,10 @@ nuxt-typo3-theme@^0.0.3-alpha.4:
     vue-mq "^1.0.1"
     vue-svgicon "^3.2.9"
 
-nuxt-typo3@^1.0.0-alpha.0:
-  version "1.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/nuxt-typo3/-/nuxt-typo3-1.0.0-alpha.0.tgz#6b8bff11e27fbaaa707da5540aa64c61913f272c"
-  integrity sha512-IUAVxEx9oX4zh4nOhPzphFIY59S0vzgnfyOHt82HAdiVy6X1fXrs9OA0l2560w6gK7j16rRfC9qULuLUWXAeeQ==
+nuxt-typo3@^1.0.0-alpha.2:
+  version "1.0.0-alpha.2"
+  resolved "https://registry.yarnpkg.com/nuxt-typo3/-/nuxt-typo3-1.0.0-alpha.2.tgz#c04c7dc55b70aff00fe6a0720e74fa71a9908f25"
+  integrity sha512-hHB/QloRKGb19zR132/7ois70Wk++Vhr5dWpuAtfVfI9YT/JR5W6gQC7g2UEwLqOJ6XL/JxLHq8BlFQEF6qLkg==
   dependencies:
     "@nuxtjs/axios" "^5.13.6"
     vee-validate "^3.4.13"
