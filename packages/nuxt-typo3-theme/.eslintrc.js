@@ -18,6 +18,12 @@ module.exports = {
         registeredComponentsOnly: true,
         ignores: []
       }
+    ],
+    'vuejs-accessibility/label-has-for': [
+      'error',
+      {
+        allowChildren: true
+      }
     ]
   },
   ignorePatterns: ['*.config.js', '*.stories.ts'],

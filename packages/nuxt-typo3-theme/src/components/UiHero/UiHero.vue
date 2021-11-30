@@ -147,7 +147,7 @@ export default UiHeroTheme as typeof UiHeroTheme
   }
 
   &__content {
-    color: var(--color-text-primary-inverted);
+    color: var(--color-white);
   }
 }
 </style>

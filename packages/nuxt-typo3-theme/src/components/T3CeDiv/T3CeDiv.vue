@@ -24,7 +24,7 @@ export default defineComponent({
 @import '../../styles/shared';
 
 $divider-color: $palette-black;
-$divider-color-layout-1: $palette-gallery;
+$divider-color-layout-1: $color-border;
 
 :root {
   --color-divider: #{$divider-color};

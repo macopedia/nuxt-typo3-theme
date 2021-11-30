@@ -107,7 +107,7 @@ export default defineComponent({
   @include media-query($ui-navbar-break-on) {
     margin: 0 var(--space-1);
     padding: var(--space-4) var(--space-4);
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
   }
 
   @include media-query(max-width $ui-navbar-break-on) {
@@ -119,11 +119,11 @@ export default defineComponent({
   &.nuxt-link-exact-active {
     @include media-query(max-width $ui-navbar-break-on) {
       color: #fff;
-      background: var(--color-bg-secondary);
+      background: var(--color-primary);
     }
 
     @include media-query($ui-navbar-break-on) {
-      border-color: var(--color-bg-secondary);
+      border-color: var(--color-primary);
     }
   }
 

@@ -38,7 +38,7 @@ export default defineComponent({
   list-style: none;
 
   &__link {
-    color: var(--color-text-primary-inverted);
+    color: var(--color-white);
     text-decoration: none;
 
     @include text(xl);
