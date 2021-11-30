@@ -182,5 +182,9 @@ export default CeGalleryTheme as typeof T3CeGallery & typeof CeGalleryTheme
       align-items: center;
     }
   }
+
+  &--no-wrap {
+    align-items: center;
+  }
 }
 </style>

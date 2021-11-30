@@ -1,8 +1,8 @@
 <template>
-  <T3NavLink class="btn" :class="[`btn--${size}`, `btn--${variant}`]" :to="to">
+  <component :is="to ? 'T3NavLink' : 'button'" class="btn" :class="[`btn--${size}`, `btn--${variant}`]" :to="to">
     <!-- @slot Button content -->
     <slot />
-  </T3NavLink>
+  </component>
 </template>
 <script lang="ts">
 import { PropType, defineComponent } from '@vue/composition-api'
@@ -16,8 +16,8 @@ export default defineComponent({
      * To link
      */
     to: {
-      type: String,
-      required: true
+      type: [String, Boolean],
+      default: false
     },
     /**
      * Color variant
@@ -33,7 +33,7 @@ export default defineComponent({
      */
     size: {
       type: String as PropType<'large' | 'medium' | 'small' | 'extra-small'>,
-      default: 'large'
+      default: 'medium'
     }
   }
 })
@@ -48,8 +48,10 @@ export default defineComponent({
   padding-right: var(--space-8);
   padding-left: var(--space-8);
   text-decoration: none;
-  border-radius: var(--space-2xs);
-  box-shadow: var(--box-shadow-sm);
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -75,7 +77,7 @@ export default defineComponent({
 
     @include media-query(sm) {
       min-width: 28.4rem;
-      padding: var(--space-2) var(--space-10);
+      padding: var(--space-3) var(--space-10);
     }
 
     @include text(xl);
@@ -90,15 +92,15 @@ export default defineComponent({
   }
 
   &--medium {
-    padding: var(--space-1) var(--space-5);
+    padding: var(--space-2) var(--space-6);
 
-    @include text(xl);
+    @include text(md);
   }
 
   &--small {
     padding: 0 var(--space-4);
 
-    @include text(xl);
+    @include text(sm);
   }
 
   &--extra-small {

@@ -115,8 +115,9 @@ export default defineComponent({
       position: absolute;
       flex-direction: column;
       min-width: 100%;
+      white-space: nowrap;
       background: white;
-      border: 1px solid black;
+      border: 1px solid var(--color-border);
       border-top: 0;
 
       li {

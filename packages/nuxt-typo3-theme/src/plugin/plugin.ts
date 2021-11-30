@@ -16,7 +16,13 @@ import T3CeMenuPages from 'nuxt-typo3-theme/src/components/T3CeMenuPages'
 import T3CeBullets from 'nuxt-typo3-theme/src/components/T3CeBullets'
 import T3CeDiv from 'nuxt-typo3-theme/src/components/T3CeDiv'
 import T3CeHtmlParser from 'nuxt-typo3-theme/src/components/T3CeHtmlParser'
+import T3Form from 'nuxt-typo3-theme/src/components/T3Form'
+import T3FormCta from 'nuxt-typo3-theme/src/components/T3Form/T3FormCta'
+import T3FormField from 'nuxt-typo3-theme/src/components/T3Form/T3FormField'
+import T3FormFieldset from 'nuxt-typo3-theme/src/components/T3Form/T3FormFieldset'
+import T3FormFieldList from 'nuxt-typo3-theme/src/components/T3Form/T3FormFieldList'
 import UiFrame from 'nuxt-typo3-theme/src/components/UiFrame'
+import UiButton from 'nuxt-typo3-theme/src/components/UiButton'
 
 import {
   UiContainer,
@@ -27,7 +33,6 @@ import {
 } from 'nuxt-typo3-theme/src/components/UiGrid'
 
 const globalComponents: Record<string, Vue.VueConstructor> = {
-  UiFrame,
   T3Frame,
   T3CeText,
   T3CeDiv,
@@ -40,10 +45,17 @@ const globalComponents: Record<string, Vue.VueConstructor> = {
   T3CeGallery,
   T3CeHtmlParser,
   UiContainer,
+  UiFrame,
   UiRow,
   UiCol,
   UiOrder,
-  UiOffset
+  UiOffset,
+  UiButton,
+  T3Form,
+  T3FormCta,
+  T3FormField,
+  T3FormFieldset,
+  T3FormFieldList
 }
 
 const defaults = {

@@ -3,7 +3,7 @@
     <UiContainer class="cw-footer__container">
       <UiRow>
         <UiCol col="lg">
-          <UiLogo :width="64" invert />
+          <UiLogo :width="250" invert />
         </UiCol>
         <UiCol v-if="footerNavigation" col="lg">
           <UiLinksList :links="footerNavigation" />
@@ -70,7 +70,7 @@ export default CwFooterTheme as typeof CwFooterTheme
 
   &,
   a {
-    color: var(--color-text-primary-inverted);
+    color: var(--color-white);
   }
 }
 </style>

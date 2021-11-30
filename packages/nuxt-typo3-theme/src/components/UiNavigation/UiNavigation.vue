@@ -58,6 +58,8 @@ $ui-navigation-lh: 3.2rem !default;
   line-height: var(--ui-navigation-lh);
 
   @include media-query($ui-navbar-break-on) {
+    --ui-navigation-fs: 1.6rem;
+
     flex-direction: row;
   }
 }
