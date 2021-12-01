@@ -1,6 +1,6 @@
 {
   "name": "nuxt-typo3-theme",
-  "version": "0.0.3-alpha.4",
+  "version": "0.0.3-alpha.5",
   "homepage": "https://macopedia.github.io/nuxt-typo3-theme",
   "main": "src/nuxt/module.ts",
   "types": "types/index.d.ts",
