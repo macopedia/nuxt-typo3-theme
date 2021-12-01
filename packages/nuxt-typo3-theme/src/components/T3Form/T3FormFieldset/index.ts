@@ -1,1 +1,1 @@
-export { default } from './T3Formfieldset.vue'
+export { default } from './T3FormFieldset.vue'
