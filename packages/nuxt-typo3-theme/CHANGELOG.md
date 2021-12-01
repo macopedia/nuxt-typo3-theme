@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.3-alpha.5](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.3-alpha.4...v0.0.3-alpha.5) (2021-12-01)
+
+
+### Features
+
+* add form styles ([#35](https://github.com/macopedia/nuxt-typo3-theme/issues/35)) ([60f9a83](https://github.com/macopedia/nuxt-typo3-theme/commit/60f9a83709e10f409d25afdcccabd5df75be9b2f))
+
+
+
+
+
 ## [0.0.3-alpha.4](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.3-alpha.3...v0.0.3-alpha.4) (2021-11-18)
 
 
