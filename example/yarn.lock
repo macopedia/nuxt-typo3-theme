@@ -8544,10 +8544,10 @@ nuxt-typo3-ce@^0.0.3-alpha.4:
   dependencies:
     "@vue/composition-api" "1.3.3"
 
-nuxt-typo3-theme@^0.0.3-alpha.5:
-  version "0.0.3-alpha.5"
-  resolved "https://registry.yarnpkg.com/nuxt-typo3-theme/-/nuxt-typo3-theme-0.0.3-alpha.5.tgz#fb5d9f01c2b72a3e94d1e0fdc00dee9420e22a42"
-  integrity sha512-iXfKR2lni+kIw4D2US7X3xj5my0wjZ4howNzwdsPEbeOUT2mS2B17kEHAJKFQ6qTwpA+nbzpsETVGdsvUnzM+A==
+nuxt-typo3-theme@^0.0.3-alpha.6:
+  version "0.0.3-alpha.6"
+  resolved "https://registry.yarnpkg.com/nuxt-typo3-theme/-/nuxt-typo3-theme-0.0.3-alpha.6.tgz#8410b8430b178e69840f293ee2c9aedfcfb1d44c"
+  integrity sha512-q/Wak8GA0w4GY3n0N3TDFzFf74rjhFzOyAB0P2y4YIJbD9glQwzC1lEJiVBoevjkwjWUqCghi3npRyjcQdP1sQ==
   dependencies:
     "@nuxtjs/google-fonts" "^1.3.0"
     body-scroll-lock "^3.1.5"

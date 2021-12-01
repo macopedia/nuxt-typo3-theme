@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.3-alpha.6](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.3-alpha.5...v0.0.3-alpha.6) (2021-12-01)
+
+
+### Bug Fixes
+
+* typo in import ([1251d3e](https://github.com/macopedia/nuxt-typo3-theme/commit/1251d3e6f7d52880674e52545b45bc2e21c3ee9b))
+
+
+
+
+
 ## [0.0.3-alpha.5](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.3-alpha.4...v0.0.3-alpha.5) (2021-12-01)
 
 
