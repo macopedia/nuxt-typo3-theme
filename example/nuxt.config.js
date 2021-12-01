@@ -37,8 +37,8 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/macopedia/nuxt-typo3-theme
-    // 'nuxt-typo3-theme',
-    require('../packages/nuxt-typo3-theme'),
+    'nuxt-typo3-theme',
+    // require('../packages/nuxt-typo3-theme'),
     // Doc: https://github.com/TYPO3-Initiatives/nuxt-typo3
     'nuxt-typo3',
     // Doc: https://github.com/nuxt-community/stylelint-module
