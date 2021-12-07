@@ -5,7 +5,7 @@
     :image-link="newsElement.slug"
   >
     <template #content>
-      <CeText
+      <T3CeText
         class="ui-news-element__text"
         :header-layout="2"
         :header-link="{ url: newsElement.slug }"
@@ -23,17 +23,15 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from '@vue/composition-api'
-
 import type { MediaElement, NewsElement } from './UiNewsElement.types'
-
-import CeText from '../../CeText'
+import T3CeText from '../../T3CeText'
 import UiButton from '../../UiButton'
 import UiNewsWrapper from '../UiNewsWrapper'
 
 export default defineComponent({
   name: 'UiNewsElement',
   components: {
-    CeText,
+    T3CeText,
     UiButton,
     UiNewsWrapper
   },

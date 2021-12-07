@@ -27,7 +27,7 @@ export default defineComponent({
     ...mapGetters(['navigation']),
     languages () {
       const state = this.$store.state as RootState
-      let languages = state.typo3?.initial?.languages
+      let languages = state.typo3?.initial?.i18n
       if (languages) {
         languages = languages.filter(link =>
           this.$typo3?.i18n?.locales?.includes(link.twoLetterIsoCode)

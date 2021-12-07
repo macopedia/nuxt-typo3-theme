@@ -26,7 +26,7 @@ export const standard = (_: any, types: any) => ({
   },
   template: `
     <UiNewsDetail v-else v-bind="$props">
-      <CeTextpic
+      <T3CeTextpic
         :appearance="appearance"
         :header="rendererContent.header"
         :gallery="rendererContent.gallery"

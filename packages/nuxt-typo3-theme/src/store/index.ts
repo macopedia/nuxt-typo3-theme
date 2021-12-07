@@ -32,7 +32,7 @@ export interface FooterContactData {
   appearance: Record<string, string>
   content: Contact
 }
-export interface Language {
+export interface i18n {
   languageId: number
   locale: string
   title: string
@@ -47,7 +47,7 @@ export interface Language {
   available: number
 }
 export interface Initial {
-  languages: Language[]
+  i18n: i18n[]
   footerNavigation?: Navigation[]
   navigation: Navigation[]
   footerContactData: FooterContactData
@@ -64,12 +64,9 @@ export interface Page {
   content: {
     [key: string]: unknown
   }
-  languages: Language[]
-  page: {
-    [key: string]: unknown
+  [key: string]: unknown
     navigation: PageNavigation
     breadcrumbs: Navigation[]
-  }
 }
 
 export interface Typo3 {
@@ -92,7 +89,7 @@ const state = {
 
 const getters = {
   breadcrumbs: (state: Typo3): Breadcrumbs => {
-    const stateBreadcrumbs = state.page?.page?.breadcrumbs
+    const stateBreadcrumbs = state.page?.breadcrumbs
 
     if (state.additionalBreadcrumb) {
       return [...stateBreadcrumbs, state.additionalBreadcrumb]
@@ -101,7 +98,7 @@ const getters = {
   },
   navigation: (state: Typo3): Navigation[] | undefined =>
     state.initial?.navigation[0].children,
-  languages: (state: Typo3): Language[] => (state as Typo3).initial?.languages,
+  languages: (state: Typo3): i18n[] => (state as Typo3).initial?.i18n,
   footerNavigation: (state: Typo3): Navigation[] | undefined =>
     (state as Typo3).initial?.footerNavigation,
   socialMenu: (state: Typo3): SocialMenu =>

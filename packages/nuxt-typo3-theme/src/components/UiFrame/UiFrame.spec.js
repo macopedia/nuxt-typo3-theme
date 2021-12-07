@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils'
 import UiFrame from './UiFrame.vue'
-import CeDiv from '../CeDiv/CeDiv.vue'
+import T3CeDiv from '../T3CeDiv/T3CeDiv.vue'
 
 describe('UiFrame', () => {
   let wrapper
@@ -12,10 +12,10 @@ describe('UiFrame', () => {
       spaceAfter: 'extra-large'
     },
     stubs: {
-      CeDiv
+      T3CeDiv
     },
     slots: {
-      default: '<CeDiv />'
+      default: '<T3CeDiv />'
     }
   }
 
@@ -49,10 +49,10 @@ describe('UiFrame', () => {
         spaceAfter: 'extra-large'
       },
       stubs: {
-        CeDiv
+        T3CeDiv
       },
       slots: {
-        default: '<CeDiv />'
+        default: '<T3CeDiv />'
       }
     })
 

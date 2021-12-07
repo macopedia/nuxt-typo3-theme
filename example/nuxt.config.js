@@ -38,6 +38,7 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/macopedia/nuxt-typo3-theme
     'nuxt-typo3-theme',
+    // require('../packages/nuxt-typo3-theme'),
     // Doc: https://github.com/TYPO3-Initiatives/nuxt-typo3
     'nuxt-typo3',
     // Doc: https://github.com/nuxt-community/stylelint-module
@@ -50,8 +51,10 @@ export default {
    */
   typo3: {
     baseURL: process.env.NUXT_HOST,
+    forms: true,
     api: {
       baseURL: 'https://api.t3pwa.com'
+      // baseURL: 'https://api.pwa-demo.ddev.site'
     },
     i18n: {
       locales: ['en', 'pl', 'de'],
@@ -59,12 +62,12 @@ export default {
     }
   },
   typo3theme: {
-    layouts: ['error']
   },
   /*
    ** Build configuration
    */
   build: {
+    transpile: ['nuxt-typo3'],
     /*
      ** You can extend webpack config here
      */

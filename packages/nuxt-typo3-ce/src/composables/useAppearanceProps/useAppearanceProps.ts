@@ -1,7 +1,7 @@
-import { CeAppearanceProps, CeAppearanceSpace } from './appearanceProps.types'
+import { T3CeAppearanceProps, T3CeAppearanceSpace } from './appearanceProps.types'
 import { PropType } from '@vue/composition-api'
 
-export default function useAppearanceProps (): CeAppearanceProps {
+export default function useAppearanceProps (): T3CeAppearanceProps {
   return {
     /**
      * Frame main css class
@@ -21,14 +21,14 @@ export default function useAppearanceProps (): CeAppearanceProps {
      * Bottom space
      */
     spaceAfter: {
-      type: String as PropType<CeAppearanceSpace>,
+      type: String as PropType<T3CeAppearanceSpace>,
       default: 'default'
     },
     /**
      * Top space
      */
     spaceBefore: {
-      type: String as PropType<CeAppearanceSpace>,
+      type: String as PropType<T3CeAppearanceSpace>,
       default: 'default'
     }
   }

@@ -53,10 +53,12 @@ body {
   --color-bg-primary: #{$color-bg-primary};
   --color-bg-secondary: #{$color-bg-secondary};
   --color-primary-inverted: #{$color-primary-inverted};
-  --color-text-primary-inverted: #{$color-text-primary-inverted};
   --color-bg-primary-inverted: #{$color-bg-primary-inverted};
   --color-link-normal: #{$color-link-normal};
   --color-bg-body: #{$color-bg-body};
+  --color-danger: #{$color-danger};
+  --color-success: #{$color-success};
+  --color-border: #{$color-border};
   --space-base: #{$space-base};
   --space-2xs: #{$space-2xs};
   --space-xs: #{$space-xs};
@@ -212,4 +214,23 @@ th {
 th {
   font-weight: var(--font-weight-bold);
   text-align: left;
+}
+
+// Forms
+// ======
+// Forms
+// ==========
+input,
+textarea,
+select {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--font-size-base, $font-size-base);
+  line-height: var(--line-height-base, $line-height-base);
+  border: 1px solid var(--color-primary);
+  border-radius: 0;
+  -webkit-apperance: none;
+
+  &:focus {
+    border-radius: 0;
+  }
 }

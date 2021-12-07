@@ -1,11 +1,11 @@
 <template>
-  <CeLink class="ui-logo" to="/">
+  <T3NavLink class="ui-logo" to="/">
     <img
       :style="{ filter: invert ? 'invert(1)' : 'none', width: `${width}px` }"
       :src="src"
       :alt="alt"
     />
-  </CeLink>
+  </T3NavLink>
 </template>
 <script lang="ts">
 import { defineComponent } from '@vue/composition-api'
@@ -28,7 +28,7 @@ export default defineComponent({
     },
     width: {
       type: Number,
-      default: 200
+      default: 250
     }
   }
 })

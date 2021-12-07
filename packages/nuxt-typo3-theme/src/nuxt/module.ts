@@ -22,7 +22,7 @@ const NuxtTypo3Theme: Module = async function (options: TYPO3ThemeOptions) {
   // @todo uncomment it when we move all components to nuxt-typo3-ce
   // this.nuxt.options.typo3.registerComponents = false
   if (options.css) {
-    this.nuxt.options.css.push('nuxt-typo3-theme/src/styles/core.scss')
+    this.nuxt.options.css.push(resolve(__dirname, '../styles/core.scss'))
   }
 
   if (options.googleFonts && !modulesList.includes('@nuxtjs/google-fonts')) {
@@ -76,3 +76,5 @@ const NuxtTypo3Theme: Module = async function (options: TYPO3ThemeOptions) {
 }
 
 export default NuxtTypo3Theme
+module.exports = NuxtTypo3Theme
+module.exports.meta = require('../../package.json')

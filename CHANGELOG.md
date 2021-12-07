@@ -3,6 +3,63 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.3-alpha.6](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.3-alpha.5...v0.0.3-alpha.6) (2021-12-01)
+
+
+### Bug Fixes
+
+* typo in import ([1251d3e](https://github.com/macopedia/nuxt-typo3-theme/commit/1251d3e6f7d52880674e52545b45bc2e21c3ee9b))
+
+
+
+
+
+## [0.0.3-alpha.5](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.3-alpha.4...v0.0.3-alpha.5) (2021-12-01)
+
+
+### Features
+
+* add form styles ([#35](https://github.com/macopedia/nuxt-typo3-theme/issues/35)) ([60f9a83](https://github.com/macopedia/nuxt-typo3-theme/commit/60f9a83709e10f409d25afdcccabd5df75be9b2f))
+
+
+
+
+
+## [0.0.3-alpha.4](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.3-alpha.3...v0.0.3-alpha.4) (2021-11-18)
+
+
+### Features
+
+* make it compatible with nuxt-typo3 1.0.0 ([#33](https://github.com/macopedia/nuxt-typo3-theme/issues/33)) ([96871e3](https://github.com/macopedia/nuxt-typo3-theme/commit/96871e3a5f43258053bb1830b33ae07b80d3c3d4))
+
+
+
+
+
+## [0.0.3-alpha.3](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.3-alpha.2...v0.0.3-alpha.3) (2021-11-17)
+
+**Note:** Version bump only for package nuxt-typo3-theme
+
+
+
+
+
+## [0.0.3-alpha.2](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.3-alpha.1...v0.0.3-alpha.2) (2021-11-17)
+
+
+### Bug Fixes
+
+* **CI:** add prepare script ([#27](https://github.com/macopedia/nuxt-typo3-theme/issues/27)) ([72d9abe](https://github.com/macopedia/nuxt-typo3-theme/commit/72d9abee5690113885e36cf5360c7069f787d908))
+
+
+### Features
+
+* **example:** create example ([#25](https://github.com/macopedia/nuxt-typo3-theme/issues/25)) ([7489144](https://github.com/macopedia/nuxt-typo3-theme/commit/74891445d6182dbfed42caa92c96e6ca372e7b2c))
+
+
+
+
+
 ## [0.0.3-alpha.1](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.3-alpha.0...v0.0.3-alpha.1) (2021-10-15)
 
 **Note:** Version bump only for package nuxt-typo3-theme

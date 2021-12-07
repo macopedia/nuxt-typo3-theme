@@ -1,5 +1,4 @@
 import { mount, createLocalVue, RouterLinkStub } from '@vue/test-utils'
-import UiPlugin from '../../plugin'
 import UiNavigation from './UiNavigation.vue'
 import { menuData } from './UiNavigation.data'
 
@@ -7,10 +6,11 @@ describe('UiNavigation', () => {
   let wrapper
   beforeEach(() => {
     const localVue = createLocalVue()
-    localVue.use(UiPlugin)
     wrapper = mount(UiNavigation, {
       stubs: {
-        NuxtLink: RouterLinkStub
+        NuxtLink: RouterLinkStub,
+        T3NavLink: RouterLinkStub,
+        SvgIcon: true
       },
       propsData: {
         links: menuData

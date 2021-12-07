@@ -51,7 +51,7 @@ export default defineComponent({
   },
   computed: {
     tag (): string {
-      return this.item.children ? 'span' : 'CeLink'
+      return this.item.children ? 'span' : 'T3NavLink'
     },
     toAttribute (): string | null {
       return this.item.children ? null : this.item.link
@@ -107,7 +107,7 @@ export default defineComponent({
   @include media-query($ui-navbar-break-on) {
     margin: 0 var(--space-1);
     padding: var(--space-4) var(--space-4);
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
   }
 
   @include media-query(max-width $ui-navbar-break-on) {

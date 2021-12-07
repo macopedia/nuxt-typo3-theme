@@ -13,7 +13,7 @@
             {{ header }}
           </component>
           <template v-if="!isSubpage">
-            <CeHtmlParser v-if="bodytext" :content="bodytext" />
+            <T3CeHtmlParser v-if="bodytext" :content="bodytext" />
             <UiButton
               v-if="subheader"
               :to="headerLink"
@@ -147,7 +147,7 @@ export default UiHeroTheme as typeof UiHeroTheme
   }
 
   &__content {
-    color: var(--color-text-primary-inverted);
+    color: var(--color-white);
   }
 }
 </style>
