@@ -19,8 +19,11 @@ Customizable UI theme for [nuxt-typo3](https://github.com/TYPO3-Initiatives/nuxt
 This module uses Nuxt+TypeScript - please setup it beforehand:
 https://typescript.nuxtjs.org/guide/setup
 
+nuxt-typo3 is required to run this theme https://github.com/TYPO3-Initiatives/nuxt-typo3. Please remember to setup the `tsconfig.json`. More info [here](https://typescript.nuxtjs.org/guide/setup/), and setup the nuxt-typo3 configuration including `baseUrl` and api `baseUrl`. Nuxt-typo3-theme requires `sass` and `sass-loader <= ^10.1.1`. Version `12` is not supported in `Vue 2.X`
+
 ```bash
-yarn add --dev @nuxt/typescript-build @nuxt/types
+yarn add --dev @nuxt/typescript-build @nuxt/types sass sass-loader@10.1.1
+yarn add nuxt-typo3
 ```
 
 edit `nuxt.config.js`
@@ -29,8 +32,6 @@ export default {
   buildModules: ['@nuxt/typescript-build']
 }
 ```
-
-Please remember to setup the `tsconfig.json`. More info [here](https://typescript.nuxtjs.org/guide/setup/)
 ## Installation 
 
 ```bash
@@ -62,19 +63,39 @@ If this happens, you can delete your `layouts/default.vue` file or disable layou
 ```
 ## Customization
 
+If you want to customize the layout, firstly disable default layout provided by nuxt-typo3-theme
 
+```js
+  typo3theme: {
+    layouts: false
+  }
+```
 ### CSS
 
 You can override CSS by SCSS or CSS variables:
 
+if overriding CSS variables, do it on `html:root` tag
+
 `layouts/default.vue`:
 ```vue
 <style>
-:root {
+html:root {
     --color-primary: red;
     --color-bg-secondary: blue;
     --color-bg-primary: var(--color-primary);
     --font-family-primary: Helvetica;
+}
+</style>
+```
+If you want to override component specific CSS variables or classes, you have to register the component, as described [here](###override-components). You don't have to change anything else inside the registered component if you don't want to.
+
+```vue
+<script lang="ts" src="nuxt-typo3-theme/src/components/UiGrid/UiCol/UiCol.vue">
+</script>
+
+<style>
+.order-1 {
+ order: 2;
 }
 </style>
 ```
