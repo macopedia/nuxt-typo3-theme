@@ -1,6 +1,7 @@
 <template>
   <ul
     v-if="links.length"
+    v-click-outside="() => active=null"
     class="ui-navigation-list"
     :class="{
       'ui-navigation-list__dropdown': parent

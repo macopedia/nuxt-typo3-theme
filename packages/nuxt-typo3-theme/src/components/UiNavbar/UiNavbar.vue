@@ -126,7 +126,7 @@ export default defineComponent({
   position: sticky;
   top: 0;
   left: 0;
-  z-index: $z-index-over;
+  z-index: $z-index-navbar;
   width: 100%;
   background: var(--ui-navbar-bg);
   border-bottom: 1px solid transparent;

@@ -23,6 +23,7 @@ declare module '*.svg?inline' {
 }
 
 declare module 'body-scroll-lock'
+declare module 'v-click-outside';
 
 declare module 'vue-mq' {
   const VueMq: PluginObject

@@ -1,13 +1,14 @@
 import { VueConstructor } from 'vue'
 import VueMq from 'vue-mq'
 import SvgIcon from 'vue-svgicon'
-
+import vClickOutside from 'v-click-outside'
 import NuxtTypo3Ce from 'nuxt-typo3-ce'
 import type { TYPO3ThemeOptions } from '../nuxt/module.types'
 import useOverrideLocalComponents from '../composables/useOverrideLocalComponents'
 
 import T3Frame from 'nuxt-typo3-theme/src/components/T3Frame'
 import T3CeText from 'nuxt-typo3-theme/src/components/T3CeText'
+import T3CeButton from 'nuxt-typo3-theme/src/components/T3CeButton'
 import T3CeTextpic from 'nuxt-typo3-theme/src/components/T3CeTextpic'
 import T3CeHeader from 'nuxt-typo3-theme/src/components/T3CeHeader'
 import T3CeGallery from 'nuxt-typo3-theme/src/components/T3CeGallery'
@@ -35,6 +36,7 @@ import {
 const globalComponents: Record<string, Vue.VueConstructor> = {
   T3Frame,
   T3CeText,
+  T3CeButton,
   T3CeDiv,
   T3CeImage,
   T3CeMenuPages,
@@ -68,6 +70,7 @@ const UiPlugin = {
     options: TYPO3ThemeOptions = defaults
   ): void => {
     Vue.use(NuxtTypo3Ce)
+    Vue.use(vClickOutside)
 
     Object.keys(globalComponents).forEach(key => {
       Vue.component(key, globalComponents[key])

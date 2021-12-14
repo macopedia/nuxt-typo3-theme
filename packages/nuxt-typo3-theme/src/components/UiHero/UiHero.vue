@@ -96,6 +96,17 @@ export default UiHeroTheme as typeof UiHeroTheme
   background-position: center;
   background-size: cover;
 
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    content: '';
+    pointer-events: none;
+  }
+
   &--left {
     justify-items: flex-start;
   }
@@ -115,6 +126,8 @@ export default UiHeroTheme as typeof UiHeroTheme
   }
 
   &__inner {
+    position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     min-height: inherit;

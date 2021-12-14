@@ -1,4 +1,5 @@
 import { mount, createLocalVue, RouterLinkStub } from '@vue/test-utils'
+import vClickOutside from 'v-click-outside'
 import UiNavigation from './UiNavigation.vue'
 import { menuData } from './UiNavigation.data'
 
@@ -6,6 +7,7 @@ describe('UiNavigation', () => {
   let wrapper
   beforeEach(() => {
     const localVue = createLocalVue()
+    localVue.use(vClickOutside)
     wrapper = mount(UiNavigation, {
       stubs: {
         NuxtLink: RouterLinkStub,

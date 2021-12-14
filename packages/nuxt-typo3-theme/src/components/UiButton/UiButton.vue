@@ -65,11 +65,21 @@ export default defineComponent({
   &--primary {
     color: var(--color-white);
     background: var(--color-bg-primary);
+
+    &:hover {
+      color: var(--color-black);
+      background: var(--color-bg-primary-inverted);
+    }
   }
 
   &--inverted {
     color: var(--color-black);
     background: var(--color-bg-primary-inverted);
+
+    &:hover {
+      color: var(--color-white);
+      background: var(--color-bg-primary);
+    }
   }
 
   &--large {
