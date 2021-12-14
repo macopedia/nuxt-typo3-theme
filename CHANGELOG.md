@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.3-alpha.7](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.3-alpha.6...v0.0.3-alpha.7) (2021-12-14)
+
+
+### Features
+
+* add CeButton and overlay for UiHero ([2d6eb60](https://github.com/macopedia/nuxt-typo3-theme/commit/2d6eb609429ec14d4103d11be5316cd450e46e58))
+
+
+
+
+
 ## [0.0.3-alpha.6](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.3-alpha.5...v0.0.3-alpha.6) (2021-12-01)
 
 
