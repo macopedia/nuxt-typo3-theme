@@ -129,7 +129,6 @@ export default defineComponent({
   z-index: $z-index-navbar;
   width: 100%;
   background: var(--ui-navbar-bg);
-  border-bottom: 1px solid transparent;
   box-shadow: var(--box-shadow-base);
 
   @include media-query($ui-navbar-break-on) {
@@ -149,7 +148,7 @@ export default defineComponent({
   }
 
   &__logo {
-    flex: 1;
+    flex: 0 1 200px;
   }
 
   &__nav {

@@ -30,7 +30,7 @@ const NuxtTypo3Theme: Module = async function (options: TYPO3ThemeOptions) {
       '@nuxtjs/google-fonts',
       this.nuxt.options.googleFonts || {
         families: {
-          'Open Sans': {
+          Rubik: {
             wght: [300, 400, 500, 700]
           }
         }

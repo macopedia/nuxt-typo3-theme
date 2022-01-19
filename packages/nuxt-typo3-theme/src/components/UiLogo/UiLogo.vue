@@ -1,11 +1,11 @@
 <template>
   <T3NavLink class="ui-logo" to="/">
     <img
-      :style="{ filter: invert ? 'invert(1)' : 'none' }"
-      :width="width"
+      :style="{ filter: invert ? 'invert(1)' : 'none', width: `${width}px` }"
       :src="src"
-      :alt="alt"/>
-    </T3NavLink>
+      :alt="alt"
+    />
+  </T3NavLink>
 </template>
 <script lang="ts">
 import { defineComponent } from '@vue/composition-api'
