@@ -6,6 +6,7 @@ export interface T3CeHeaderLink {
   type: string
   url: string
   target: string
+  href: string
   aTagParams: string
   link: string
 }
