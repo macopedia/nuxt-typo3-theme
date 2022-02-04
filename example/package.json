@@ -14,8 +14,8 @@
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-0",
     "nuxt": "^2.0.0",
-    "nuxt-typo3": "alpha",
-    "nuxt-typo3-theme": "^0.0.3-alpha.7"
+    "nuxt-typo3": "^1.0.0-alpha.5",
+    "nuxt-typo3-theme": "^0.0.3-alpha.8"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0",

@@ -53,8 +53,7 @@ export default {
     baseURL: process.env.NUXT_HOST,
     forms: true,
     api: {
-      baseURL: 'https://api.t3pwa.com'
-      // baseURL: 'https://api.pwa-demo.ddev.site'
+      baseURL: 'https://demo.t3pwa.com/headless/'
     },
     i18n: {
       locales: ['en', 'pl', 'de'],

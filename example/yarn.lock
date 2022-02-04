@@ -8537,29 +8537,30 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
-nuxt-typo3-ce@^0.0.3-alpha.4:
-  version "0.0.3-alpha.4"
-  resolved "https://registry.yarnpkg.com/nuxt-typo3-ce/-/nuxt-typo3-ce-0.0.3-alpha.4.tgz#c226e7bddefcefa623a84dbcc268ad548c8da7dd"
-  integrity sha512-dWxbPpTn5dkMU66hkndnBOi86geTGW91Lpu3TGp+9wpIk1+ii1idTKK+Er6UVcmOHTA/61q319fnihv+k2BJmA==
+nuxt-typo3-ce@^0.0.3-alpha.8:
+  version "0.0.3-alpha.8"
+  resolved "https://registry.yarnpkg.com/nuxt-typo3-ce/-/nuxt-typo3-ce-0.0.3-alpha.8.tgz#8d45101f07db145463e7e33f311dc76604aa084c"
+  integrity sha512-/PXJ8K0hEIVDDxuMdNrJg63gbWMozsfI0O02ZFBDbqI8zvBc1kfpFq0Wc2Uv6zj2T/JAZs+3Vb1JyAfPgeYjlw==
   dependencies:
     "@vue/composition-api" "1.3.3"
 
-nuxt-typo3-theme@^0.0.3-alpha.6:
-  version "0.0.3-alpha.6"
-  resolved "https://registry.yarnpkg.com/nuxt-typo3-theme/-/nuxt-typo3-theme-0.0.3-alpha.6.tgz#8410b8430b178e69840f293ee2c9aedfcfb1d44c"
-  integrity sha512-q/Wak8GA0w4GY3n0N3TDFzFf74rjhFzOyAB0P2y4YIJbD9glQwzC1lEJiVBoevjkwjWUqCghi3npRyjcQdP1sQ==
+nuxt-typo3-theme@^0.0.3-alpha.8:
+  version "0.0.3-alpha.8"
+  resolved "https://registry.yarnpkg.com/nuxt-typo3-theme/-/nuxt-typo3-theme-0.0.3-alpha.8.tgz#f45c04cbb961dea7e33bf5e6bbce7ad3dffe6a23"
+  integrity sha512-YP62ZvwHt/pI+KpPytyRans14owHk5JfQplMn9sH2iJLfwS3D9RUlArc92N/9S8wulIttL0xIipkBqYfCZ3lfQ==
   dependencies:
     "@nuxtjs/google-fonts" "^1.3.0"
     body-scroll-lock "^3.1.5"
-    nuxt-typo3-ce "^0.0.3-alpha.4"
+    nuxt-typo3-ce "^0.0.3-alpha.8"
     sanitize.css "^12.0.1"
+    v-click-outside "^3.1.2"
     vue-mq "^1.0.1"
     vue-svgicon "^3.2.9"
 
-nuxt-typo3@alpha:
-  version "1.0.0-alpha.2"
-  resolved "https://registry.yarnpkg.com/nuxt-typo3/-/nuxt-typo3-1.0.0-alpha.2.tgz#c04c7dc55b70aff00fe6a0720e74fa71a9908f25"
-  integrity sha512-hHB/QloRKGb19zR132/7ois70Wk++Vhr5dWpuAtfVfI9YT/JR5W6gQC7g2UEwLqOJ6XL/JxLHq8BlFQEF6qLkg==
+nuxt-typo3@^1.0.0-alpha.5:
+  version "1.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/nuxt-typo3/-/nuxt-typo3-1.0.0-alpha.5.tgz#532669e455da3ad4e5d25d7e098cb9761300b4d1"
+  integrity sha512-oihkQL/TU+G+g5g1xaOHROEIGwGa7p/CnI3qBynjTkEEmYIaKJQf7kOkLDVC7bDBLXlRUW0VCSwJLECMWKtm1g==
   dependencies:
     "@nuxtjs/axios" "^5.13.6"
     vee-validate "^3.4.13"
@@ -12526,6 +12527,11 @@ uuid@^3.3.2, uuid@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
+
+v-click-outside@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/v-click-outside/-/v-click-outside-3.1.2.tgz#1dbaa14bf09a21bd16f23a38f03bfa3988f71281"
+  integrity sha512-gMdRqfRE6m6XU6SiFi3dyBlFB2MWogiXpof8Aa3LQysrl9pzTndqp/iEaAphLoadaQUFnQ0ec6fLLaxr7LiY6A==
 
 v8-compile-cache@^2.0.3:
   version "2.3.0"
