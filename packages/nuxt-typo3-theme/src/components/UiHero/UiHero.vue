@@ -16,7 +16,7 @@
             <T3CeHtmlParser v-if="bodytext" :content="bodytext" />
             <UiButton
               v-if="subheader"
-              :to="headerLink"
+              :to="heroLink"
               size="large"
               class="ui-hero__button"
               variant="inverted"
@@ -79,6 +79,9 @@ const UiHeroTheme = defineComponent({
     heroPositionCss (): string {
       const position = this.headerPosition || 'left'
       return `ui-hero--${position}`
+    },
+    heroLink (): string {
+      return typeof this.headerLink !== 'string' ? this.headerLink.href : this.headerLink
     }
   },
   mounted () {
