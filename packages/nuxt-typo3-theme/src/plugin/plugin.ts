@@ -22,6 +22,7 @@ import T3FormCta from 'nuxt-typo3-theme/src/components/T3Form/T3FormCta'
 import T3FormField from 'nuxt-typo3-theme/src/components/T3Form/T3FormField'
 import T3FormFieldset from 'nuxt-typo3-theme/src/components/T3Form/T3FormFieldset'
 import T3FormFieldList from 'nuxt-typo3-theme/src/components/T3Form/T3FormFieldList'
+import T3CeFeloginLogin from 'nuxt-typo3-theme/src/components/T3CeFeloginLogin'
 import UiFrame from 'nuxt-typo3-theme/src/components/UiFrame'
 import UiButton from 'nuxt-typo3-theme/src/components/UiButton'
 
@@ -57,7 +58,8 @@ const globalComponents: Record<string, Vue.VueConstructor> = {
   T3FormCta,
   T3FormField,
   T3FormFieldset,
-  T3FormFieldList
+  T3FormFieldList,
+  T3CeFeloginLogin
 }
 
 const defaults = {
