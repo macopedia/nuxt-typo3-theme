@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.3-alpha.8](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.3-alpha.7...v0.0.3-alpha.8) (2022-02-04)
+
+
+### Bug Fixes
+
+* detect object or string ([0168afe](https://github.com/macopedia/nuxt-typo3-theme/commit/0168afe359e1898b857f6e90f573d70d39c3a351))
+
+
+### Features
+
+* add felogin ([f3d4cb9](https://github.com/macopedia/nuxt-typo3-theme/commit/f3d4cb98b9f88744348f3e25a5afc65285aa33b4))
+
+
+
+
+
 ## [0.0.3-alpha.7](https://github.com/macopedia/nuxt-typo3-theme/compare/v0.0.3-alpha.6...v0.0.3-alpha.7) (2021-12-14)
 
 
